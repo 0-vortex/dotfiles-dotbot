@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~", "~/.config", "~/.npm-global"]
+
+- link:
+    # Zsh
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.zprofile: zsh/zprofile.zsh
+    # Git
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.czrc: git/.czrc
+    # Node
+    ~/.npmrc: node/.npmrc
+    ~/.npm-global/etc/.npmrc: node/.npmrc-global
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog]
+    - [chsh -s $(which zsh)]
