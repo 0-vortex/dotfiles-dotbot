@@ -20,5 +20,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog]
+    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg readme-md-generator]
     - [chsh -s $(which zsh)]
