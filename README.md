@@ -35,13 +35,18 @@ On a working ready machine the process is as simple as running:
 ```bash
 git clone --recurse-submodules -j8  git@github.com:0-vortex/dotfiles.git .dotfiles
 cd .dotfiles
-./fonts/install.sh
+```
+
+Install vendor files and run the dotbot setup:
+
+```bash
+./vendor/fonts/install.sh
 ./install.sh
 ```
 
 ## Zsh
 
-I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all my Zsh plugins. For terminal I use [iTerm3](https://www.iterm2.com) with [SpaceDust](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Spacedust.itermcolors) color scheme and [13pt Source Code Pro medium for powerline](https://github.com/powerline/fonts/tree/master/SourceCodePro) font.
+I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all my Zsh plugins. For terminal I use [iTerm3](https://www.iterm2.com) with [SpaceDust](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Spacedust.itermcolors) color scheme and [12pt Meslo LG S Regular for Powerline](https://github.com/powerline/fonts/tree/master/Meslo%20Slashed) font.
 
 ### Aliases and functions
 
