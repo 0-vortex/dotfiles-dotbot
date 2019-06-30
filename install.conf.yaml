@@ -20,5 +20,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg readme-md-generator]
+    - [antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh]
+    - [antibody update]
+    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg]
     - [chsh -s $(which zsh)]
