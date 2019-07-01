@@ -21,8 +21,8 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [./vendor/fonts/install.sh]
-    - [make -f vendor/neofetch/Makefile PREFIX=/usr/local install]
+    - [sudo make -f vendor/neofetch/Makefile PREFIX=/usr/local install]
     - [antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh]
     - [antibody update]
-    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg]
+    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2]
     - [chsh -s $(which zsh)]
