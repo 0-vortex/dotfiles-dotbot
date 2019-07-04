@@ -6,6 +6,10 @@
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     su = submodule foreach --recursive git pull origin master
     sm = submodule update --remote --merge
+    numstat = diff --numstat
+    shortstat = diff --shortstat
+    ns = numstat HEAD~
+    ss = shortstat HEAD~
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.gitignore_global
