@@ -19,10 +19,33 @@
     ~/.npm-global/etc/.npmrc: node/.npmrc-global
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [./vendor/fonts/install.sh]
-    - [sudo make -f vendor/neofetch/Makefile PREFIX=/usr/local install]
-    - [antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh]
-    - [antibody update]
-    - [npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2 nodemon create-react-app]
-    - [chsh -s $(which zsh)]
+  -
+    description: "Installing fonts"
+    command: "./vendor/fonts/install.sh"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
+    description: "Installing neofetch"
+    command: "sudo make -f vendor/neofetch/Makefile PREFIX=/usr/local install"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
+    description: "Installing ZSH plugins"
+    command: "antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
+    description: "Installing NPM global packages"
+    command: "npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2 nodemon create-react-app"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
+    description: "Setting ZSH as default shell"
+    command: "chsh -s $(which zsh)"
+    stdout: true
+    stderr: true
+    stdin: true

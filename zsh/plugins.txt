@@ -2,4 +2,4 @@ mafredri/zsh-async
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop
 denysdovhan/spaceship-prompt
-
+unixorn/git-extra-commands
