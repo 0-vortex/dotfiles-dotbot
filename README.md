@@ -78,8 +78,9 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 2. Go through [system preferences](#system-preferences) & set everything up.
 3. Install [Node.js](https://nodejs.org/en/).
 4. Install [Go](https://golang.org/dl/).
-5. Install [Antibody](http://getantibody.github.io/) via ``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``
-6. Download dotfiles repository recursively and [install](#install).
+5. Install [Antibody](http://getantibody.github.io/) via ``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
+6. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``.
+7. Download dotfiles repository recursively and [install](#install).
 
 ## Install
 
@@ -88,7 +89,7 @@ I also use [DotBot](https://github.com/anishathalye/dotbot) to apply appropriate
 ```bash
 git clone --recurse-submodules -j4  git@github.com:0-vortex/dotfiles.git .dotfiles
 cd .dotfiles
-./install.sh
+./install
 ```
 
 ## Zsh

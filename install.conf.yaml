@@ -4,7 +4,7 @@
       relink: true
       force: true
 
-- clean: ["~", "~/.config", "~/.npm-global"]
+- clean: ["~", "~/.config", "~/.npm-global", "~/.atom"]
 
 - link:
     # Zsh
@@ -17,11 +17,29 @@
     # Node
     ~/.npmrc: node/.npmrc
     ~/.npm-global/etc/.npmrc: node/.npmrc-global
+    # Atom
+    ~/.atom/config.cson: atom/config.cson
+    ~/.atom/init.coffee: atom/init.coffee
+    ~/.atom/keymap.cson: atom/keymap.cson
+    ~/.atom/snippets.cson: atom/snippets.cson
+    # Neofetch
+    ~/.config/neofetch: neofetch
+    # App settings
+    ~/Library/Preferences/com.googlecode.iterm2.plist: Library/Preferences/com.googlecode.iterm2.plist
+    ~/Library/Preferences/com.jetbrains.WebStorm-EAP.plist: Library/Preferences/com.jetbrains.WebStorm-EAP.plist
+    ~/Library/Preferences/com.coppertino.Vox-Helper.plist: Library/Preferences/com.coppertino.Vox-Helper.plist
+    ~/Library/Preferences/com.coppertino.VoxPrefs.plist: Library/Preferences/com.coppertino.VoxPrefs.plist
 
 - shell:
   -
     description: "Installing fonts"
     command: "./vendor/fonts/install.sh"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
+    description: "Installing atom packages"
+    command: "apm install file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax"
     stdout: true
     stderr: true
     stdin: true

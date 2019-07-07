@@ -1,0 +1,36 @@
+"*":
+  core:
+    disabledPackages: [
+      "markdown-preview"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "isotope-ui"
+      "dash-syntax"
+    ]
+  editor:
+    fontFamily: "Oxygen, Ubuntu Mono derivative Powerline, Meslo LG S for Powerline, monospace"
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "30e5fbf2-e11a-4700-ac10-2569b21c4798"
+  "file-icons":
+    onChanges: true
+  "isotope-ui":
+    backgroundGradient: true
+    fontFamily: "Oxygen"
+    lowContrastTooltip: true
+    matchEditorFont: true
+    minimalMode: true
+  "markdown-preview-enhanced":
+    mermaidTheme: "dark"
+    previewTheme: "github-dark.css"
+    revealjsTheme: "solarized.css"
+  welcome:
+    showOnStartup: false
+".graphql.source":
+  editor:
+    softWrapAtPreferredLineLength: true
