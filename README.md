@@ -6,6 +6,7 @@ These dotfiles are the various configuration files I use on macOS.
 
 ##### Contents
 
+- [General Overview](#general-overview)
 - [System Preferences](#system-preferences)
 - [Requirements](#requirements)
 - [Install](#install)
@@ -15,6 +16,16 @@ These dotfiles are the various configuration files I use on macOS.
   - [Aliases and functions](#aliases-and-functions)
 - [Interesting dotfiles](#interesting-dotfiles)
 - [Contributing](#contributing)
+
+## General Overview
+
+## Terminal - iTerm3
+
+![iTerm3](static/iterm.png)
+
+## Text Editor - Atom
+
+![Atom](static/atom.png)
 
 ## System Preferences
 
