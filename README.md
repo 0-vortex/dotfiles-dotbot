@@ -115,6 +115,7 @@ I use some aliases to get around my system as fast as possible. You can view the
 
 My dotfiles are heavily inspired by:
 
+- [lee-dohm/dotfiles](https://github.com/lee-dohm/dotfiles)
 - [nikitavoloboev/dotfiles](https://github.com/nikitavoloboev/dotfiles)
 - [rix1/dotfiles](https://github.com/rix1/dotfiles)
 - [audibleblink/dotbot](https://github.com/audibleblink/dotbot)

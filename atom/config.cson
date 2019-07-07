@@ -1,7 +1,15 @@
 "*":
+  "atom-beautify":
+    js:
+      default_beautifier: "ESLint Fixer"
+    json:
+      default_beautifier: "Prettier"
   core:
     disabledPackages: [
       "markdown-preview"
+      "metrics"
+      "spell-check"
+      "welcome"
     ]
     telemetryConsent: "no"
     themes: [
@@ -19,6 +27,9 @@
     userId: "30e5fbf2-e11a-4700-ac10-2569b21c4798"
   "file-icons":
     onChanges: true
+  "git-plus":
+    tags:
+      signTags: true
   "isotope-ui":
     backgroundGradient: true
     fontFamily: "Oxygen"
@@ -29,6 +40,9 @@
     mermaidTheme: "dark"
     previewTheme: "github-dark.css"
     revealjsTheme: "solarized.css"
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
   welcome:
     showOnStartup: false
 ".graphql.source":

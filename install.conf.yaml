@@ -26,7 +26,6 @@
     ~/.config/neofetch: neofetch
     # App settings
     ~/Library/Preferences/com.googlecode.iterm2.plist: Library/Preferences/com.googlecode.iterm2.plist
-    ~/Library/Preferences/com.jetbrains.WebStorm-EAP.plist: Library/Preferences/com.jetbrains.WebStorm-EAP.plist
     ~/Library/Preferences/com.coppertino.Vox-Helper.plist: Library/Preferences/com.coppertino.Vox-Helper.plist
     ~/Library/Preferences/com.coppertino.VoxPrefs.plist: Library/Preferences/com.coppertino.VoxPrefs.plist
 
@@ -39,7 +38,7 @@
     stdin: true
   -
     description: "Installing atom packages"
-    command: "apm install file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax"
+    command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
     stdout: true
     stderr: true
     stdin: true
