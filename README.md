@@ -115,6 +115,8 @@ I use some aliases to get around my system as fast as possible. You can view the
 
 My dotfiles are heavily inspired by:
 
+- [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [wilsonmar/dotfiles](https://wilsonmar.github.io/dotfiles/#launchpad-dashboard)
 - [lee-dohm/dotfiles](https://github.com/lee-dohm/dotfiles)
 - [nikitavoloboev/dotfiles](https://github.com/nikitavoloboev/dotfiles)
 - [rix1/dotfiles](https://github.com/rix1/dotfiles)

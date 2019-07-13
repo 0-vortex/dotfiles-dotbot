@@ -37,6 +37,12 @@
     stderr: true
     stdin: true
   -
+    description: "Configuring mac defaults"
+    command: "sudo ./macos/defaults.sh"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
     description: "Installing atom packages"
     command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
     stdout: true
