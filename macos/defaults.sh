@@ -36,6 +36,14 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
+# App store
+# Enable the WebKit Developer Tools in the Mac App Store
+# Enable Debug Menu in the Mac App Store
+# Disable the automatic update check
+defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+defaults write com.apple.appstore ShowDebugMenu -bool true
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool false
+
 # Spotlight
 # Load new settings before rebuilding the index
 # Make sure indexing is enabled for the main volume
