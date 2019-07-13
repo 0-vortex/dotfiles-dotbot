@@ -56,7 +56,7 @@
     stdin: true
   -
     description: "Installing NPM global packages"
-    command: "npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2 nodemon create-react-app"
+    command: "npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2 nodemon create-react-app prisma2 @loopback/cli openapi-to-graphql-cli"
     stdout: true
     stderr: true
     stdin: true
