@@ -2,6 +2,7 @@
 [user]
     name = TED Vortex
     email = ted.vortex@gmail.com
+	signinkey = 3A7C3F2DF91FB476
 [alias]
     # View the current working tree status using the short format
     s = status -s
@@ -55,3 +56,5 @@
     whitespace = red reverse
 [github]
     user = 0-vortex
+[commit]
+	gpgsign = true
