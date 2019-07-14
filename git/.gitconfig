@@ -2,7 +2,7 @@
 [user]
     name = TED Vortex
     email = ted.vortex@gmail.com
-	signinkey = 3A7C3F2DF91FB476
+    signinkey = 3A7C3F2DF91FB476
 [alias]
     # View the current working tree status using the short format
     s = status -s
@@ -34,12 +34,13 @@
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
     # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	whitespace = blank-at-eol,blank-at-eof,tab-in-indent,-space-before-tab
     # Speed up commands involving untracked files such as `git status`.
     # https://git-scm.com/docs/git-update-index#_untracked_cache
     untrackedCache = true
     pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.gitignore_global
+	editor = atom
 [color]
     ui = true
 [color "diff-highlight"]
@@ -58,3 +59,5 @@
     user = 0-vortex
 [commit]
 	gpgsign = true
+[credential]
+	helper = osxkeychain
