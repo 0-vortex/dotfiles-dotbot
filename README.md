@@ -115,7 +115,8 @@ cd .dotfiles
 
 ## iTerm3
 
-Head over to [iterm color scheme]() and pick your favorites. My handpicked list of themes I am keeping installed is:
+My top 3 themes are: ayu, Spacedust, LiquidCarbonTransparent.
+Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) and pick your favorites. My handpicked list of themes I am keeping installed is:
 
 #### [Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Argonaut.itermcolors)
 ![Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/argonaut.png)

@@ -40,6 +40,7 @@
     mermaidTheme: "dark"
     previewTheme: "github-dark.css"
     revealjsTheme: "solarized.css"
+    scrollSync: false
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
