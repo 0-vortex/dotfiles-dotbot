@@ -29,18 +29,18 @@
     # List number of files and lines changed since HEAD
     ss = shortstat HEAD~
     # List contributors with number of commits
-	contributors = shortlog --summary --numbered
+  contributors = shortlog --summary --numbered
 [core]
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
     # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = blank-at-eol,blank-at-eof,tab-in-indent,-space-before-tab
+  whitespace = blank-at-eol,blank-at-eof,tab-in-indent,-space-before-tab
     # Speed up commands involving untracked files such as `git status`.
     # https://git-scm.com/docs/git-update-index#_untracked_cache
     untrackedCache = true
     pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.gitignore_global
-	editor = atom
+  editor = atom
 [color]
     ui = true
 [color "diff-highlight"]
@@ -58,6 +58,6 @@
 [github]
     user = 0-vortex
 [commit]
-	gpgsign = true
+  gpgsign = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain

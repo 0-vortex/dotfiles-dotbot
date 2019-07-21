@@ -91,9 +91,11 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 4. Install [Keybase](https://keybase.io).
 5. Install [Node.js](https://nodejs.org/en/).
 6. Install [Go](https://golang.org/dl/).
-7. Install [Antibody](http://getantibody.github.io/) via ``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
-8. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``.
-9. Download dotfiles repository recursively and [install](#install).
+7. Install [Rust](https://www.rust-lang.org/) via ``curl https://sh.rustup.rs -sSf | sh
+``
+8. Install [Antibody](http://getantibody.github.io/) via ``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
+9. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``.
+10. Download dotfiles repository recursively and [install](#install).
 
 ## Install
 

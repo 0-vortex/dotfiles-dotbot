@@ -3,4 +3,5 @@ alias ll='ls -lahH'
 alias lal='ls -al'
 alias d='dirs -v'
 alias dus='du -s'
-
+alias el='exa --tree --level=2 --long'
+alias ell='exa --header --long --git --group --created --modified --inode --grid'

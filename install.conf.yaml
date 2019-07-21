@@ -43,14 +43,8 @@
     stderr: true
     stdin: true
   -
-    description: "Installing atom packages"
-    command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
-    stdout: true
-    stderr: true
-    stdin: true
-  -
     description: "Installing neofetch"
-    command: "cd vendor/neofetch && PREFIX=/usr/local install"
+    command: "cd vendor/neofetch && make PREFIX=/usr/local install"
     stdout: true
     stderr: true
     stdin: true
@@ -61,8 +55,21 @@
     stderr: true
     stdin: true
   -
+    description: "Installing atom packages"
+    command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
     description: "Installing NPM global packages"
     command: "npm i -g npm diff-so-fancy commitizen cz-conventional-changelog create-dmg pm2 nodemon create-react-app prisma2 @loopback/cli openapi-to-graphql-cli npm-check-updates serve"
+    stdout: true
+    stderr: true
+    stdin: true
+    stdin: true
+  -
+    description: "Installing Cargo global packages"
+    command: "cargo install exa --force"
     stdout: true
     stderr: true
     stdin: true
