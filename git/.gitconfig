@@ -40,7 +40,8 @@
     untrackedCache = true
     pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.gitignore_global
-  editor = atom
+	editor = atom --wait
+	autocrlf = input
 [color]
     ui = true
 [color "diff-highlight"]
@@ -61,3 +62,5 @@
   gpgsign = true
 [credential]
   helper = osxkeychain
+[merge]
+	tool = atom
