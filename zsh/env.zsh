@@ -3,7 +3,8 @@
 # Variables
 export CLICOLOR="YES"
 export LSCOLORS="exgxdHdHcxaHaHhBhDeaec"
-export N_PREFIX="~/.n"
+export N_PREFIX="${HOME}/.n"
+export N_USE_XZ="true"
 
 # Spaceship settings
 export SPACESHIP_TIME_SHOW=true
@@ -27,8 +28,8 @@ export PYPATH="/Library/Frameworks/Python.framework/Versions/3.7/bin"
 export CARGOPATH="${HOME}/.cargo/bin"
 export NODENPATH="${N_PREFIX}/bin"
 export NPMPATH="${HOME}/.npm-global/bin"
-export GOPATH="$(go env GOPATH)/bin"
+export GOBINPATH="$(go env GOPATH)/bin"
 
-export PATH="$NODENPATH:$NPMPATH:$GOPATH:$CARGOPATH:$PORTSPATH:$PYPATH:$PATH"
+export PATH="$NPMPATH:$NODENPATH:$GOBINPATH:$CARGOPATH:$PORTSPATH:$PYPATH:$PATH"
 
 typeset -U PATH # Remove duplicates in $PATH

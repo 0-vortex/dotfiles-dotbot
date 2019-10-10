@@ -62,7 +62,7 @@
     stdin: true
   -
     description: "Installing NPM global packages"
-    command: "npm i -g npm @loopback/cli @storybook/cli asar aws bit-bin catj commitizen create-dmg create-react-app cz-conventional-changelog depcheck diff-so-fancy express-generator gh-pages install-peerdeps lerna lighthouse n nativefier node-gyp nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 prisma2 redis-commander sao serve skpm snyk standard-changelog"
+    command: "npm i -g npm @loopback/cli @storybook/cli asar aws bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy eslint express-generator gh-pages http-server install-peerdeps lerna lighthouse n nativefier node-gyp nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 prisma2 redis-commander sao serve skpm snyk standard-changelog"
     stdout: true
     stderr: true
     stdin: true
@@ -70,6 +70,13 @@
   -
     description: "Installing Cargo global packages"
     command: "cargo install exa --force"
+    stdout: true
+    stderr: true
+    stdin: true
+    stdin: true
+  -
+    description: "Installing GO global packages"
+    command: "go get github.com/jesseduffield/lazydocker"
     stdout: true
     stderr: true
     stdin: true
