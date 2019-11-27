@@ -9,7 +9,7 @@
     # Clone a repository including all submodules
     c = clone --recursive
     # Better log
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --graph --abbrev-commit --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     # Show verbose output about tags, branches or remotes
     tags = tag -l
     branches = branch -a
@@ -30,6 +30,7 @@
     ss = shortstat HEAD~
     # List contributors with number of commits
   contributors = shortlog --summary --numbered
+	fame = python3 -m gitfame -m gitfame
 [core]
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
@@ -64,3 +65,5 @@
   helper = osxkeychain
 [merge]
 	tool = atom
+[status]
+	submodulesummary = 1

@@ -37,6 +37,12 @@
     stderr: true
     stdin: true
   -
+    description: "Installing git-extras"
+    command: "cd ./vendor/git-extras && sudo make install"
+    stdout: true
+    stderr: true
+    stdin: true
+  -
     description: "Configuring mac defaults"
     command: "sudo ./macos/defaults.sh"
     stdout: true
@@ -44,7 +50,7 @@
     stdin: true
   -
     description: "Installing neofetch"
-    command: "cd vendor/neofetch && make PREFIX=/usr/local install"
+    command: "cd ./vendor/neofetch && make PREFIX=/usr/local install"
     stdout: true
     stderr: true
     stdin: true
@@ -59,6 +65,13 @@
     command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
     stdout: true
     stderr: true
+    stdin: true
+  -
+    description: "Install Python3 global packages"
+    command: "pip3 install git-fame tqdm"
+    stdout: true
+    stderr: true
+    stdin: true
     stdin: true
   -
     description: "Installing NPM global packages"

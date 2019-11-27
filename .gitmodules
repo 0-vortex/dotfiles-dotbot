@@ -7,3 +7,6 @@
 [submodule "vendor/neofetch"]
 	path = vendor/neofetch
 	url = https://github.com/dylanaraps/neofetch
+[submodule "vendor/git-extras"]
+	path = vendor/git-extras
+	url = https://github.com/tj/git-extras
