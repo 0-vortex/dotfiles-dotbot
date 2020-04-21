@@ -7,24 +7,43 @@ export N_PREFIX="${HOME}/.n"
 export N_USE_XZ="true"
 
 # Spaceship settings
+export SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  node          # Node.js section
+  ruby          # Ruby section
+  xcode         # Xcode section
+  swift         # Swift section
+  golang        # Go section
+  rust          # Rust section
+  julia         # Julia section
+  docker        # Docker section
+  aws           # Amazon Web Services section
+  conda         # conda virtualenv section
+  pyenv         # Pyenv section
+  kubectl       # Kubectl context section
+  terraform     # Terraform workspace section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
 export SPACESHIP_TIME_SHOW=true
-export SPACESHIP_HG_BRANCH_SHOW=false
-export SPACESHIP_HG_STATUS_SHOW=false
-export SPACESHIP_ELM_SHOW=false
-export SPACESHIP_ELIXIR_SHOW=false
-export SPACESHIP_PHP_SHOW=false
-export SPACESHIP_HASKELL_SHOW=false
-export SPACESHIP_VENV_SHOW=false
 export SPACESHIP_CONDA_SHOW=false
 export SPACESHIP_PYENV_SHOW=false
-export SPACESHIP_DOTNET_SHOW=false
-export SPACESHIP_EMBER_SHOW=false
 export SPACESHIP_BATTERY_THRESHOLD=50
-export SPACESHIP_VI_MODE_SHOW=false
+export SPACESHIP_DOCKER_CONTEXT_SHOW=false
+export SPACESHIP_EXIT_CODE_SHOW=true
 
 # Path
 export PORTSPATH="/opt/local/bin:/opt/local/sbin"
-export PYPATH="/Library/Frameworks/Python.framework/Versions/3.7/bin"
+export PYPATH="/Library/Frameworks/Python.framework/Versions/3.8/bin"
 export CARGOPATH="${HOME}/.cargo/bin"
 export NODENPATH="${N_PREFIX}/bin"
 export NPMPATH="${HOME}/.npm-global/bin"

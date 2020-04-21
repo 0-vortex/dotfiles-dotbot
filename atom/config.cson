@@ -17,7 +17,8 @@
       "dash-syntax"
     ]
   editor:
-    fontFamily: "Oxygen, Ubuntu Mono derivative Powerline, Meslo LG S for Powerline, monospace"
+    fontFamily: "Jetbrains Mono, Oxygen, monospace"
+    fontSize: 16
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
@@ -41,6 +42,9 @@
     previewTheme: "github-dark.css"
     revealjsTheme: "solarized.css"
     scrollSync: false
+  "project-plus":
+    newWindow: true
+    showPath: true
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true

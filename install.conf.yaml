@@ -50,7 +50,7 @@
     stdin: true
   -
     description: "Installing neofetch"
-    command: "cd ./vendor/neofetch && make PREFIX=/usr/local install"
+    command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
     stdout: true
     stderr: true
     stdin: true
@@ -62,7 +62,7 @@
     stdin: true
   -
     description: "Installing atom packages"
-    command: "apm install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
+    command: "apm-beta install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
     stdout: true
     stderr: true
     stdin: true
@@ -72,20 +72,17 @@
     stdout: true
     stderr: true
     stdin: true
-    stdin: true
   -
     description: "Installing NPM global packages"
     command: "npm i -g npm @loopback/cli @storybook/cli asar aws bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint express-generator gh-pages http-server install-peerdeps lerna lighthouse n nativefier node-gyp nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 prisma2 quicktype redis-commander sao serve skpm snyk standard-changelog"
     stdout: true
     stderr: true
     stdin: true
-    stdin: true
   -
     description: "Installing Cargo global packages"
     command: "cargo install exa --force"
     stdout: true
     stderr: true
-    stdin: true
     stdin: true
   -
     description: "Installing GO global packages"

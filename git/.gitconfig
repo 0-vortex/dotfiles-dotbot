@@ -30,7 +30,7 @@
     ss = shortstat HEAD~
     # List contributors with number of commits
   contributors = shortlog --summary --numbered
-	fame = python3 -m gitfame -m gitfame
+	fame = !python3 -m gitfame
 [core]
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
@@ -41,7 +41,7 @@
     untrackedCache = true
     pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.gitignore_global
-	editor = atom --wait
+	editor = atom-beta --wait
 	autocrlf = input
 [color]
     ui = true
