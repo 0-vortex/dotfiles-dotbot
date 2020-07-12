@@ -67,3 +67,5 @@
 	tool = atom
 [status]
 	submodulesummary = 1
+[diff "plist"]
+	textconv = plutil -convert xml1 -o -

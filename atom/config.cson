@@ -42,6 +42,9 @@
     previewTheme: "github-dark.css"
     revealjsTheme: "solarized.css"
     scrollSync: false
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
   "project-plus":
     newWindow: true
     showPath: true
