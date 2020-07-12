@@ -72,7 +72,7 @@
     stdin: true
   -
     description: "Installing NPM global packages"
-    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog"
+    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools"
     stdout: true
     stderr: true
     stdin: true
