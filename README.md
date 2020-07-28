@@ -68,12 +68,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Argonaut.itermcolors)
 ![Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/argonaut.png)
 
-#### [Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Atom.itermcolors)
-![Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/atom.png)
-
-#### [Bright Lights](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Bright%20Lights.itermcolors)
-![Bright Lights](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/bright_lights.png)
-
 #### [Dark+](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Dark%2B.itermcolors)
 ![Dark+](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/dark_plus.png)
 
@@ -83,23 +77,8 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Glacier.itermcolors)
 ![Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/glacier.png)
 
-#### [Hacktober](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Hacktober.itermcolors)
-![Hacktober](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/hacktober.png)
-
-#### [Hardcore](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Hardcore.itermcolors)
-![Hardcore](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/hardcore.png)
-
-#### [LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/LiquidCarbonTransparent.itermcolors)
-![LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/liquid_carbon_transparent.png)
-
-#### [MaterialOcean](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/MaterialOcean.itermcolors)
-![MaterialOcean](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/material_ocean.png)
-
 #### [Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Monokai%20Vivid.itermcolors)
 ![Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/monokai_vivid.png)
-
-#### [Neutron](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Neutron.itermcolors)
-![Neutron](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/neutron.png)
 
 #### [Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Operator%20Mono%20Dark.itermcolors)
 ![Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/operator_mono_dark.png)
@@ -107,17 +86,8 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/PaulMillr.itermcolors)
 ![PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/paul_millr.png)
 
-#### [Pro](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Pro.itermcolors)
-![Pro](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/pro.png)
-
-#### [Royal](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Royal.itermcolors)
-![Royal](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/royal.png)
-
 #### [SeaShells](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/SeaShells.itermcolors)
 ![SeaShells](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/sea_shells.png)
-
-#### [Seti](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Seti.itermcolors)
-![Seti](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/seti.png)
 
 #### [Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Spacedust.itermcolors)
 ![Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacedust.png)
@@ -127,12 +97,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 
 #### [Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Tomorrow%20Night%20Bright.itermcolors)
 ![Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/tomorrow_night_bright.png)
-
-#### [UnderTheSea](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/UnderTheSea.itermcolors)
-![UnderTheSea](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/under_the_sea.png)
-
-#### [VibrantInk](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/VibrantInk.itermcolors)
-![VibrantInk](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/vibrant_ink.png)
 
 #### [ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/ayu.itermcolors)
 ![ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/ayu.png)
