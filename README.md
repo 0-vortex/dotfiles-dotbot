@@ -1,6 +1,6 @@
 # :rocket: :construction: My configuration files for macOS [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)  
 
-> ZSH, JetBrains, Atom
+> Node, Go, Rust, ZSH, .macos, JetBrains, Atom
 
 These dotfiles are the various configuration files I use on macOS.
 
