@@ -1,3 +1,4 @@
+source /etc/profile
 source ~/.zsh_plugins.sh # Load zsh plugins
 
 source ~/.dotfiles/zsh/env.zsh

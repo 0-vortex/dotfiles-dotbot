@@ -66,13 +66,13 @@
     stdin: true
   -
     description: "Install Python3 global packages"
-    command: "pip3 install git-fame tqdm delete-facebook-posts"
+    command: "pip3 install git-fame tqdm delete-facebook-posts httpie"
     stdout: true
     stderr: true
     stdin: true
   -
     description: "Installing NPM global packages"
-    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools"
+    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli @nestjs/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools caniuse-cmd how-2"
     stdout: true
     stderr: true
     stdin: true
@@ -84,7 +84,7 @@
     stdin: true
   -
     description: "Installing GO global packages"
-    command: "go get github.com/jesseduffield/lazydocker"
+    command: "go get -u github.com/jesseduffield/lazydocker github.com/astaxie/bat"
     stdout: true
     stderr: true
     stdin: true
