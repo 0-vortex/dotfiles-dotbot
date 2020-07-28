@@ -7,7 +7,6 @@ These dotfiles are the various configuration files I use on macOS.
 ##### Contents
 
 - [General Overview](#general-overview)
-- [System Preferences](#system-preferences)
 - [Requirements](#requirements)
 - [Install](#install)
 - [iTerm3](#iterm3)
@@ -26,60 +25,6 @@ These dotfiles are the various configuration files I use on macOS.
 ## Text Editor - Atom
 
 ![Atom](static/atom.png)
-
-## System Preferences
-
-![macOS Catalina](static/preferences/macos-catalina.png)
-
-### General
-
-![General settings](static/preferences/general.png)
-
-### Dock
-
-![Dock](static/preferences/dock.png)
-
-### Trackpad
-
-![Trackpad point & click](static/preferences/trackpad-1-point-and-click.png)
-![Trackpad scroll & zoom](static/preferences/trackpad-2-scroll-and-zoom.png)
-![Trackpad more gestures](static/preferences/trackpad-3-more-gestures.png)
-
-### Built-in Retina Display
-
-![Display settings](static/preferences/displays-1-display.png)
-![Display night shift](static/preferences/displays-2-night-shift.png)
-
-### Mission Control
-
-![Mission Control](static/preferences/mission-control.png)
-
-### Software Update
-
-![Software Update](static/preferences/software-update.png)
-
-### Date & Time
-
-![Date & Time](static/preferences/date-and-time.png)
-
-### Energy Saver
-
-![Energy Saver battery](static/preferences/energy-saver-1-battery.png)
-![Energy Saver power adapter](static/preferences/energy-saver-1-power-adapter.png)
-
-### Bluetooth
-
-![Bluetooth](static/preferences/bluetooth.png)
-
-### Sound
-
-![Sound](static/preferences/sound.png)
-
-### Desktop & Screen Saver
-
-![Desktop & Screen Saver desktop](static/preferences/desktop-and-screensaver-1-desktop.png)
-![Desktop & Screen Saver screen saver](static/preferences/desktop-and-screensaver-2-screen-saver.png)
-![Desktop & Screen Saver hot corners](static/preferences/desktop-and-screensaver-3-hot-corners.png)
 
 ## Requirements
 
@@ -126,9 +71,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Atom.itermcolors)
 ![Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/atom.png)
 
-#### [Belafonte Night](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Belafonte%20Night.itermcolors)
-![Belafonte Night](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/belafonte_night.png)
-
 #### [Bright Lights](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Bright%20Lights.itermcolors)
 ![Bright Lights](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/bright_lights.png)
 
@@ -137,9 +79,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 
 #### [Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Flatland.itermcolors)
 ![Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/flatland.png)
-
-#### [Floraverse](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Floraverse.itermcolors)
-![Floraverse](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/floraverse.png)
 
 #### [Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Glacier.itermcolors)
 ![Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/glacier.png)
@@ -150,29 +89,17 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Hardcore](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Hardcore.itermcolors)
 ![Hardcore](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/hardcore.png)
 
-#### [Harper](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Harper.itermcolors)
-![Harper](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/harper.png)
-
 #### [LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/LiquidCarbonTransparent.itermcolors)
 ![LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/liquid_carbon_transparent.png)
 
-#### [MaterialDark](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/MaterialDark.itermcolors)
-![MaterialDark](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/material_dark.png)
-
 #### [MaterialOcean](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/MaterialOcean.itermcolors)
 ![MaterialOcean](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/material_ocean.png)
-
-#### [Monokai Soda](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Monokai%20Soda.itermcolors)
-![Monokai Soda](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/monokai_soda.png)
 
 #### [Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Monokai%20Vivid.itermcolors)
 ![Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/monokai_vivid.png)
 
 #### [Neutron](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Neutron.itermcolors)
 ![Neutron](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/neutron.png)
-
-#### [OceanicMaterial](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/OceanicMaterial.itermcolors)
-![OceanicMaterial](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/oceanic_material.png)
 
 #### [Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Operator%20Mono%20Dark.itermcolors)
 ![Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/operator_mono_dark.png)
@@ -182,9 +109,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 
 #### [Pro](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Pro.itermcolors)
 ![Pro](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/pro.png)
-
-#### [Red Planet](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Red%20Planet.itermcolors)
-![Red Planet](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/red_planet.png)
 
 #### [Royal](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Royal.itermcolors)
 ![Royal](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/royal.png)
@@ -201,12 +125,6 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [SpaceGray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/SpaceGray%20Eighties.itermcolors)
 ![SpaceGray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacegray_eighties.png)
 
-#### [SpaceGray Eighties Dull](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/SpaceGray%20Eighties%20Dull.itermcolors)
-![SpaceGray Eighties Dull](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacegray_eighties_dull.png)
-
-#### [Symfonic](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Symfonic.itermcolors)
-![Symfonic](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/symfonic.png)
-
 #### [Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Tomorrow%20Night%20Bright.itermcolors)
 ![Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/tomorrow_night_bright.png)
 
@@ -216,21 +134,15 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [VibrantInk](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/VibrantInk.itermcolors)
 ![VibrantInk](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/vibrant_ink.png)
 
-#### [Wez](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Wez.itermcolors)
-![Wez](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/wez.png)
-
 #### [ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/ayu.itermcolors)
 ![ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/ayu.png)
-
-#### [lovelace](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/lovelace.itermcolors)
-![lovelace](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/LoveLace.png)
 
 #### [synthwave](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/synthwave.itermcolors)
 ![synthwave](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/synthwave.png)
 
 ## Zsh
 
-I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all my Zsh plugins. For terminal I use [iTerm3](https://www.iterm2.com) with [SpaceDust](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Spacedust.itermcolors) color scheme and [12pt Meslo LG S Regular for Powerline](https://github.com/powerline/fonts/tree/master/Meslo%20Slashed) font.
+I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all my Zsh plugins. For terminal I use [iTerm3](https://www.iterm2.com) with [ayu](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/ayu.itermcolors) color scheme and [12pt JetBrains Mono](https://www.jetbrains.com/lp/mono/) font.
 
 ### Aliases and functions
 
@@ -241,10 +153,12 @@ I use some aliases to get around my system as fast as possible. You can view the
 My dotfiles are heavily inspired by:
 
 - [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-- [wilsonmar/dotfiles](https://wilsonmar.github.io/dotfiles/#launchpad-dashboard)
+- [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
 - [lee-dohm/dotfiles](https://github.com/lee-dohm/dotfiles)
 - [nikitavoloboev/dotfiles](https://github.com/nikitavoloboev/dotfiles)
 - [rix1/dotfiles](https://github.com/rix1/dotfiles)
+- [wilsonmar/dotfiles](https://wilsonmar.github.io/dotfiles/#launchpad-dashboard)
+- [tiiiecherle/osx_install_config](https://github.com/tiiiecherle/osx_install_config#default-shell-and-config-file)
 - [audibleblink/dotbot](https://github.com/audibleblink/dotbot)
 
 ## Contributing
