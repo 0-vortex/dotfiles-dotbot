@@ -62,7 +62,7 @@ cd .dotfiles
 
 ## iTerm3
 
-My top 3 themes are: ayu, Spacedust, LiquidCarbonTransparent.
+My top 3 themes are: ayu, Spacedust and LiquidCarbonTransparent.
 Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) and pick your favorites. My handpicked list of themes I am keeping installed is:
 
 #### [Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Argonaut.itermcolors)
