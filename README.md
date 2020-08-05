@@ -62,14 +62,11 @@ cd .dotfiles
 
 ## iTerm3
 
-My top 3 themes are: ayu, Spacedust and LiquidCarbonTransparent.
+My top 3 themes I am switching between are: ayu, Spacedust and LiquidCarbonTransparent.
 Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) and pick your favorites. My handpicked list of themes I am keeping installed is:
 
-#### [Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Argonaut.itermcolors)
-![Argonaut](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/argonaut.png)
-
-#### [Dark+](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Dark%2B.itermcolors)
-![Dark+](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/dark_plus.png)
+#### [Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Atom.itermcolors)
+![Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/atom.png)
 
 #### [Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Flatland.itermcolors)
 ![Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/flatland.png)
@@ -77,11 +74,11 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Glacier.itermcolors)
 ![Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/glacier.png)
 
+#### [LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/LiquidCarbonTransparent.itermcolors)
+![LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/liquid_carbon_transparent.png)
+
 #### [Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Monokai%20Vivid.itermcolors)
 ![Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/monokai_vivid.png)
-
-#### [Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Operator%20Mono%20Dark.itermcolors)
-![Operator Mono Dark](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/operator_mono_dark.png)
 
 #### [PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/PaulMillr.itermcolors)
 ![PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/paul_millr.png)
@@ -92,17 +89,11 @@ Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm
 #### [Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Spacedust.itermcolors)
 ![Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacedust.png)
 
-#### [SpaceGray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/SpaceGray%20Eighties.itermcolors)
-![SpaceGray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacegray_eighties.png)
-
 #### [Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Tomorrow%20Night%20Bright.itermcolors)
 ![Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/tomorrow_night_bright.png)
 
 #### [ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/ayu.itermcolors)
 ![ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/ayu.png)
-
-#### [synthwave](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/synthwave.itermcolors)
-![synthwave](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/synthwave.png)
 
 ## Zsh
 
