@@ -30,39 +30,27 @@
     ~/.config/neofetch: neofetch
 
 - shell:
-  -
-    description: "Installing fonts"
+  - description: "Installing fonts"
     command: "./vendor/fonts/install.sh"
-  -
-    description: "Installing git-extras"
+  - description: "Installing git-extras"
     command: "cd ./vendor/git-extras && sudo make install"
-  -
-    description: "Configuring mac preferences"
+  - description: "Configuring mac preferences"
     command: "sudo ./macos/bigsur.sh"
-  -
-    description: "Configuring mac defaults"
+  - description: "Configuring mac defaults"
     command: "sudo ./defaults/import.sh"
-  -
-    description: "Installing neofetch"
+  - description: "Installing neofetch"
     command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
-  -
-    description: "Installing ZSH plugins"
+  - description: "Installing ZSH plugins"
     command: "antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
-  -
-    description: "Installing Atom IDE packages"
+  - description: "Installing Atom IDE packages"
     command: "apm-beta install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
-  -
-    description: "Install Python3 global packages"
+  - description: "Install Python3 global packages"
     command: "pip3 install git-fame tqdm delete-facebook-posts httpie"
-  -
-    description: "Installing Node global packages"
+  - description: "Installing Node global packages"
     command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli @nestjs/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools caniuse-cmd how-2 hexo-cli tldr"
-  -
-    description: "Installing Rust global packages"
+  - description: "Installing Rust global packages"
     command: "cargo install exa petname fd-find ripgrep  dotenv-linter --force"
-  -
-    description: "Installing Go global packages"
+  - description: "Installing Go global packages"
     command: "go get -u github.com/jesseduffield/lazydocker github.com/astaxie/bat"
-  -
-    description: "Setting ZSH as default shell"
+  - description: "Setting ZSH as default shell"
     command: "chsh -s $(which zsh)"
