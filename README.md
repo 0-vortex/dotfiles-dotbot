@@ -33,13 +33,15 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 1. Boot fresh/user macOS Mojave or above copy.
 2. Go through [system preferences](#system-preferences) and set everything up.
 3. Install [GPG Suite](https://gpgtools.org).
-4. Install [Keybase](https://keybase.io).
+4. Install [KeyBase](https://keybase.io).
 5. Install [Node.js](https://nodejs.org/en/).
 6. Install [Go](https://golang.org/dl/).
-7. Install [Rust](https://www.rust-lang.org/) via ``curl https://sh.rustup.rs -sSf | sh
-``
-8. Install [Antibody](http://getantibody.github.io/) via ``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
-9. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``.
+7. Install [Rust](https://www.rust-lang.org/) via 
+``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
+8. Install [Antibody](http://getantibody.github.io/) via 
+``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
+9. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to 
+``Window: Install shell commands``.
 10. Download dotfiles repository recursively and [install](#install).
 
 ## Install

@@ -3,6 +3,10 @@
       create: true
       relink: true
       force: true
+    shell:
+      stdout: true
+      stderr: true
+      stdin: true
 
 - clean: ["~", "~/.config", "~/.npm-global", "~/.atom"]
 
@@ -24,73 +28,41 @@
     ~/.atom/snippets.cson: atom/snippets.cson
     # Neofetch
     ~/.config/neofetch: neofetch
-    # App settings
-    ~/Library/Preferences/com.googlecode.iterm2.plist: Library/Preferences/com.googlecode.iterm2.plist
 
 - shell:
   -
     description: "Installing fonts"
     command: "./vendor/fonts/install.sh"
-    stdout: true
-    stderr: true
-    stdin: true
   -
     description: "Installing git-extras"
     command: "cd ./vendor/git-extras && sudo make install"
-    stdout: true
-    stderr: true
-    stdin: true
+  -
+    description: "Configuring mac preferences"
+    command: "sudo ./macos/bigsur.sh"
   -
     description: "Configuring mac defaults"
-    command: "sudo ./macos/bigsur.sh"
-    stdout: true
-    stderr: true
-    stdin: true
+    command: "sudo ./defaults/import.sh"
   -
     description: "Installing neofetch"
     command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
-    stdout: true
-    stderr: true
-    stdin: true
   -
     description: "Installing ZSH plugins"
     command: "antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
-    stdout: true
-    stderr: true
-    stdin: true
   -
-    description: "Installing atom packages"
+    description: "Installing Atom IDE packages"
     command: "apm-beta install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
-    stdout: true
-    stderr: true
-    stdin: true
   -
     description: "Install Python3 global packages"
     command: "pip3 install git-fame tqdm delete-facebook-posts httpie"
-    stdout: true
-    stderr: true
-    stdin: true
   -
-    description: "Installing NPM global packages"
-    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli @nestjs/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools caniuse-cmd how-2 hexo-cli"
-    stdout: true
-    stderr: true
-    stdin: true
+    description: "Installing Node global packages"
+    command: "npm i -g npm @loopback/cli @storybook/cli @prisma/cli @nestjs/cli aws-sdk bit-bin catj commitizen create-dmg create-react-app create-react-native-app cz-conventional-changelog depcheck diff-so-fancy doctoc eslint gh-pages http-server install-peerdeps lerna lighthouse n nativefier nodemon npm-check-updates ntl openapi-to-graphql-cli parcel-bundler pm2 quicktype sao serve skpm snyk standard-changelog sls-dev-tools caniuse-cmd how-2 hexo-cli tldr"
   -
-    description: "Installing Cargo global packages"
-    command: "cargo install exa --force"
-    stdout: true
-    stderr: true
-    stdin: true
+    description: "Installing Rust global packages"
+    command: "cargo install exa petname fd-find ripgrep  dotenv-linter --force"
   -
-    description: "Installing GO global packages"
+    description: "Installing Go global packages"
     command: "go get -u github.com/jesseduffield/lazydocker github.com/astaxie/bat"
-    stdout: true
-    stderr: true
-    stdin: true
   -
     description: "Setting ZSH as default shell"
     command: "chsh -s $(which zsh)"
-    stdout: true
-    stderr: true
-    stdin: true
