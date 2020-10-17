@@ -43,7 +43,7 @@ export SPACESHIP_EXIT_CODE_SHOW=true
 
 # Path
 export PORTSPATH="/opt/local/bin:/opt/local/sbin"
-export PYPATH="/Library/Frameworks/Python.framework/Versions/3.8/bin"
+export PYPATH="/Library/Frameworks/Python.framework/Versions/3.9/bin"
 export CARGOPATH="${HOME}/.cargo/bin"
 export NODENPATH="${N_PREFIX}/bin"
 export NPMPATH="${HOME}/.npm-global/bin"

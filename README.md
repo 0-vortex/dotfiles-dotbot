@@ -26,20 +26,62 @@ These dotfiles are the various configuration files I use on macOS.
 
 ![Atom](static/atom.png)
 
+## System Preferences
+
+![macOS](static/system-preferences/macos.png)
+
+### General
+
+![General settings](static/system-preferences/general.png)
+
+### Keyboard
+
+![Keyboard](static/system-preferences/keyboard.png)
+![Keyboard](static/system-preferences/keyboard-text.png)
+
+### Dock
+
+![Dock](static/system-preferences/dock-and-menu-bar.png)
+![Dock](static/system-preferences/dock-and-menu-bar-battery.png)
+![Dock](static/system-preferences/dock-and-menu-bar-clock.png)
+
+### Trackpad
+
+![Trackpad point & click](static/system-preferences/trackpad-point-and-click.png)
+
+### Mission Control
+
+![Mission Control](static/system-preferences/mission-control.png)
+
+### Software Update
+
+![Software Update](static/system-preferences/software-update.png)
+
+### Security and Privacy
+
+![Firewall](static/system-preferences/security-and-privacy-firewall.png)
+![Location Services](static/system-preferences/security-and-privacy-location-services-system.png)
+
+### Spotlight
+
+![Search Results](static/system-preferences/spotlight-search-results.png)
+
 ## Requirements
 
 I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
 
 1. Boot fresh/user macOS Mojave or above copy.
-2. Go through [system preferences](#system-preferences) and set everything up.
-3. Install [GPG Suite](https://gpgtools.org).
-4. Install [KeyBase](https://keybase.io).
-5. Install [Node.js](https://nodejs.org/en/).
-6. Install [Go](https://golang.org/dl/).
-7. Install [Rust](https://www.rust-lang.org/) via 
+1. Go through [system preferences](#system-preferences) and set everything up.
+1. Install [Xcode](https://developer.apple.com/xcode/).
+1. Install [GPG Suite](https://gpgtools.org).
+1. Install [KeyBase](https://keybase.io).
+1. Install [Python](https://www.python.org).
+1. Install [Node.js](https://nodejs.org/en/).
+1. Install [Go](https://golang.org/dl/).
+1. Install [Rust](https://www.rust-lang.org/) via 
 ``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
 8. Install [Antibody](http://getantibody.github.io/) via 
-``curl -sfL git.io/antibody | sh -s - -b /usr/local/bin``.
+``sudo sh -s -c "$(curl -sfL git.io/antibody)" - -b /usr/local/bin``.
 9. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to 
 ``Window: Install shell commands``.
 10. Download dotfiles repository recursively and [install](#install).
