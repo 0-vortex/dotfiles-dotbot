@@ -28,6 +28,8 @@
     ~/.atom/snippets.cson: atom/snippets.cson
     # Neofetch
     ~/.config/neofetch: neofetch
+    # Karabiner
+    ~/.config/karabiner: karabiner
 
 - shell:
   - description: "Installing fonts"
