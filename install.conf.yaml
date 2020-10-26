@@ -12,24 +12,24 @@
 
 - link:
     # Zsh
-    ~/.zshrc: zsh/zshrc.zsh
-    ~/.zprofile: zsh/zprofile.zsh
+    ~/.zshrc: config/zsh/zshrc.zsh
+    ~/.zprofile: config/zsh/zprofile.zsh
     # Git
-    ~/.gitconfig: git/.gitconfig
-    ~/.gitignore_global: git/.gitignore_global
-    ~/.czrc: git/.czrc
+    ~/.gitconfig: config/git/.gitconfig
+    ~/.gitignore_global: config/git/.gitignore_global
+    ~/.czrc: config/git/.czrc
     # Node
-    ~/.npmrc: node/.npmrc
-    ~/.npm-global/etc/.npmrc: node/.npmrc-global
+    ~/.npmrc: config/node/.npmrc
+    ~/.npm-global/etc/.npmrc: config/node/.npmrc-global
     # Atom
-    ~/.atom/config.cson: atom/config.cson
-    ~/.atom/init.coffee: atom/init.coffee
-    ~/.atom/keymap.cson: atom/keymap.cson
-    ~/.atom/snippets.cson: atom/snippets.cson
+    ~/.atom/config.cson: config/atom/config.cson
+    ~/.atom/init.coffee: config/atom/init.coffee
+    ~/.atom/keymap.cson: config/atom/keymap.cson
+    ~/.atom/snippets.cson: config/atom/snippets.cson
     # Neofetch
-    ~/.config/neofetch: neofetch
+    ~/.config/neofetch: config/neofetch
     # Karabiner
-    ~/.config/karabiner: karabiner
+    ~/.config/karabiner: config/karabiner
 
 - shell:
   - description: "Installing fonts"
@@ -43,7 +43,7 @@
   - description: "Installing neofetch"
     command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
   - description: "Installing ZSH plugins"
-    command: "antibody bundle < ~/.dotfiles/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
+    command: "antibody bundle < ~/.dotfiles/config/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
   - description: "Installing Atom IDE packages"
     command: "apm-beta install -c file-icons language-graphql markdown-preview-enhanced minimap isotope-ui dash-syntax autocomplete-json docblockr highlight-selected  tree-view-git-status teletype atom-beautify git-plus"
   - description: "Install Python3 global packages"
