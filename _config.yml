@@ -5,3 +5,4 @@ theme: jekyll-theme-midnight
 
 plugins:
   - jemoji
+  - jekyll-sitemap
