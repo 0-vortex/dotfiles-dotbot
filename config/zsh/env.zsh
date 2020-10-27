@@ -41,14 +41,17 @@ export SPACESHIP_BATTERY_THRESHOLD=50
 export SPACESHIP_DOCKER_CONTEXT_SHOW=false
 export SPACESHIP_EXIT_CODE_SHOW=true
 
+export GEM_HOME="${HOME}/.gem"
+
 # Path
+export NPMPATH="${HOME}/.npm-global/bin"
+export NODENPATH="${N_PREFIX}/bin"
+export GOBINPATH="$(go env GOPATH)/bin"
+export CARGOPATH="${HOME}/.cargo/bin"
 export PORTSPATH="/opt/local/bin:/opt/local/sbin"
 export PYPATH="/Library/Frameworks/Python.framework/Versions/3.9/bin"
-export CARGOPATH="${HOME}/.cargo/bin"
-export NODENPATH="${N_PREFIX}/bin"
-export NPMPATH="${HOME}/.npm-global/bin"
-export GOBINPATH="$(go env GOPATH)/bin"
+export GEMBINPATH="${GEM_HOME}/bin"
 
-export PATH="$NPMPATH:$NODENPATH:$GOBINPATH:$CARGOPATH:$PORTSPATH:$PYPATH:$PATH"
+export PATH="$NPMPATH:$NODENPATH:$GOBINPATH:$CARGOPATH:$PORTSPATH:$PYPATH:$GEMBINPATH:$PATH"
 
 typeset -U PATH # Remove duplicates in $PATH
