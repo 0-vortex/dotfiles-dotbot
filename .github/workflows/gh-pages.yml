@@ -14,6 +14,7 @@ jobs:
         run: |
           mkdir -p public
           cp README.md public/index.md
+          cp -R static/ public/static/
           cp _config.yml public/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
