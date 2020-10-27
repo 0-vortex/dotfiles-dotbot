@@ -7,6 +7,7 @@ These dotfiles are the various configuration files I use on macOS.
 ##### Contents
 
 - [General Overview](#general-overview)
+- [System Preferences](#system-preferences)
 - [Requirements](#requirements)
 - [Install](#install)
 - [iTerm3](#iterm3)
@@ -18,11 +19,13 @@ These dotfiles are the various configuration files I use on macOS.
 
 ## General Overview
 
-## Terminal - iTerm3
+[![asciicast](https://asciinema.org/a/368424.svg)](https://asciinema.org/a/368424)
+
+### Terminal - iTerm3
 
 ![iTerm3](static/iterm.png)
 
-## Text Editor - Atom
+### Text Editor - Atom
 
 ![Atom](static/atom.png)
 
