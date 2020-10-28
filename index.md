@@ -19,7 +19,6 @@
 - [Requirements](#requirements)
 - [Install](#install)
 - [iTerm3](#iterm3)
-- [Atom](#atom)
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
 - [Interesting dotfiles](#interesting-dotfiles)
@@ -107,7 +106,7 @@ gpg --list-secret-keys --keyid-format LONG
 gpg --armor --export keyname | pbcopy
 ```
 
-I also use [DotBot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://raw.githubusercontent.com/0-vortex/dotfiles/master/.install.conf.yaml) for what it will exactly do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
+I also use [DotBot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://raw.githubusercontent.com/0-vortex/dotfiles/master/install.conf.yaml) for what it will exactly do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
 
 ```bash
 git clone --recurse-submodules -j4  git@github.com:0-vortex/dotfiles.git .dotfiles
