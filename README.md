@@ -1,4 +1,5 @@
-# :rocket: :construction: My configuration files for macOS [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)  
+# :rocket: :construction: My configuration files for macOS [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles?ref=badge_shield)
+ 
 
 > Node, Go, Rust, ZSH, .macos, JetBrains, Atom
 
@@ -170,3 +171,7 @@ My dotfiles are heavily inspired by:
 ## Thank you
 
 [![Twitter](https://bit.ly/2K9PC8q)](https://twitter.com/0_vortex)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles?ref=badge_large)
