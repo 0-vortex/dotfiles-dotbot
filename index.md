@@ -1,8 +1,16 @@
-# :rocket: :construction: My configuration files for macOS [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)  
+# :rocket: :construction: 0-vortex/dotfiles   
 
-> Node, Go, Rust, ZSH, .macos, JetBrains, Atom
+[![Actions Status](https://github.com/0-vortex/dotfiles/workflows/gh-pages/badge.svg)](https://github.com/0-vortex/dotfiles/actions)
+ [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles?ref=badge_shield)
 
-These dotfiles are the various configuration files I use on macOS.
+[![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)
+ [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+> Configuration: `zsh`, `antibody`, `defaults` 
+
+> Package managers: `pip`, `npm`, `cargo`, `go`
+
+> Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
 
 ##### Contents
 

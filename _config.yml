@@ -1,5 +1,5 @@
-title: 0-vortex dotfiles
-description: These dotfiles are the various configuration files I use on macOS.
+title: TED Vortex's dotfiles
+description: A utility first dev tooling repo with dotbot, zsh, antibody, defaults, plist, fonts, git-extras, atom, pip, npm, cargo, go, karabiner, carpalx full optimisation
 show_downloads: true
 theme: jekyll-theme-midnight
 
