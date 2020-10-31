@@ -36,6 +36,8 @@
     command: "./vendor/fonts/install.sh"
   - description: "Installing git-extras"
     command: "cd ./vendor/git-extras && sudo make install"
+  - description: "Installing git-quick-stats"
+    command: "cd ./vendor/git-quick-stats && sudo make install"
   - description: "Configuring mac preferences"
     command: "sudo ./macos/bigsur.sh"
   - description: "Configuring mac defaults"

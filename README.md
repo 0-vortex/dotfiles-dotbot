@@ -10,7 +10,7 @@
 
 > Package managers: `pip`, `npm`, `cargo`, `go`
 
-> Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
+> Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [git-quick-stats](https://github.com/arzzen/git-quick-stats), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
 
 ##### Contents
 
