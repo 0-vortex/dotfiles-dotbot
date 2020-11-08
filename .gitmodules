@@ -16,3 +16,6 @@
 [submodule "vendor/git-quick-stats"]
 	path = vendor/git-quick-stats
 	url = https://github.com/arzzen/git-quick-stats
+[submodule "vendor/font-jetbrains"]
+	path = vendor/font-jetbrains
+	url = https://github.com/JetBrains/JetBrainsMono

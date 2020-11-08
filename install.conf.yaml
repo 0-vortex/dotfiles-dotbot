@@ -32,8 +32,12 @@
     ~/.config/karabiner: config/karabiner
 
 - shell:
+  - description: "Cleaning user fonts"
+    command: "sudo rm -f -- ~/Library/Fonts/*(N)"
   - description: "Installing fonts"
     command: "./vendor/fonts/install.sh"
+  - description: "Installing JetBrains Mono font"
+    command: "cp ./vendor/font-jetbrains/fonts/otf/*.otf ~/Library/Fonts"
   - description: "Installing git-extras"
     command: "cd ./vendor/git-extras && sudo make install"
   - description: "Installing git-quick-stats"
