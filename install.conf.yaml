@@ -32,6 +32,8 @@
     ~/.config/karabiner: config/karabiner
 
 - shell:
+  - description: "Installing pkgsrc"
+    command: "./macos/pkgsrc.sh"
   - description: "Cleaning user fonts"
     command: "sudo rm -f -- ~/Library/Fonts/*(N)"
   - description: "Installing fonts"
