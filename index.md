@@ -1,12 +1,10 @@
 # :rocket: :construction: 0-vortex/dotfiles   
 
 [![Actions Status](https://github.com/0-vortex/dotfiles/workflows/gh-pages/badge.svg)](https://github.com/0-vortex/dotfiles/actions)
- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0-vortex%2Fdotfiles?ref=badge_shield)
-
-[![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)
  [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+ [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)
 
-> Configuration: `zsh`, `antibody`, `defaults` 
+> Configuration: `zsh`, `antibody`, `defaults`, `pkgsrc` 
 
 > Package managers: `pip`, `npm`, `cargo`, `go`
 
@@ -15,14 +13,25 @@
 ##### Contents
 
 - [General Overview](#general-overview)
+  - [Terminal - iTerm3](#terminal---iterm3)
+  - [Text Editor - Atom](#text-editor---atom)
 - [System Preferences](#system-preferences)
+  - [General](#general)
+  - [Keyboard](#keyboard)
+  - [Dock](#dock)
+  - [Trackpad](#trackpad)
+  - [Mission Control](#mission-control)
+  - [Software Update](#software-update)
+  - [Security and Privacy](#security-and-privacy)
+  - [Spotlight](#spotlight)
 - [Requirements](#requirements)
 - [Install](#install)
-- [iTerm3](#iterm3)
+- [iTerm3 themes](#iterm3-themes)
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
 - [Interesting dotfiles](#interesting-dotfiles)
 - [Contributing](#contributing)
+- [Thank you](#thank-you)
 
 ## General Overview
 
@@ -114,7 +123,7 @@ cd .dotfiles
 ./install
 ```
 
-## iTerm3
+## iTerm3 themes
 
 My top 3 themes I am switching between are: ayu, Spacedust and LiquidCarbonTransparent.
 Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) and pick your favorites. My handpicked list of themes I am keeping installed is:
