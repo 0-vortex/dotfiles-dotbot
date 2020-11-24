@@ -61,6 +61,6 @@
   - description: "Installing Rust global packages"
     command: "cargo install exa petname fd-find ripgrep dotenv-linter"
   - description: "Installing Go global packages"
-    command: "go get -u github.com/jesseduffield/lazydocker github.com/astaxie/bat"
+    command: "go get -u -v github.com/jesseduffield/lazydocker github.com/astaxie/bat"
   - description: "Setting ZSH as default shell"
     command: "[[ $SHELL == $(which zsh) ]] && echo 'ZSH is already the defeult shell, skipping' || chsh -s $(which zsh)"
