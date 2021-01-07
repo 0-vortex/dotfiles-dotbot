@@ -5,6 +5,7 @@ export CLICOLOR="YES"
 export LSCOLORS="exgxdHdHcxaHaHhBhDeaec"
 export N_PREFIX="${HOME}/.n"
 export N_USE_XZ="true"
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
 
 # Spaceship settings
 export SPACESHIP_PROMPT_ORDER=(
