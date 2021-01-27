@@ -50,7 +50,7 @@ export NODENPATH="${N_PREFIX}/bin"
 export GOBINPATH="$(go env GOPATH)/bin"
 export CARGOPATH="${HOME}/.cargo/bin"
 export PORTSPATH="/opt/local/bin:/opt/local/sbin"
-export PYPATH="/Library/Frameworks/Python.framework/Versions/3.9/bin"
+export PYPATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${HOME}/Library/Python/3.9/bin"
 export GEMBINPATH="${GEM_HOME}/bin"
 
 export PATH="$NPMPATH:$NODENPATH:$GOBINPATH:$CARGOPATH:$PORTSPATH:$PYPATH:$GEMBINPATH:$PATH"
