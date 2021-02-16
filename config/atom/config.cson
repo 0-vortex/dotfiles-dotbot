@@ -4,18 +4,22 @@
       default_beautifier: "ESLint Fixer"
     json:
       default_beautifier: "Prettier"
+  "city-lights-ui": {}
   core:
     disabledPackages: [
-      "markdown-preview"
       "metrics"
       "spell-check"
       "welcome"
+      "atom-beautify"
+      "markdown-preview-enhanced"
     ]
     telemetryConsent: "no"
     themes: [
-      "isotope-ui"
-      "dash-syntax"
+      "dash-ui"
+      "seti-syntax"
     ]
+  "dash-ui":
+    themeColor: "Orange"
   editor:
     fontFamily: "Jetbrains Mono, Oxygen, monospace"
     fontSize: 16
@@ -37,6 +41,7 @@
     lowContrastTooltip: true
     matchEditorFont: true
     minimalMode: true
+  "markdown-preview": {}
   "markdown-preview-enhanced":
     mermaidTheme: "dark"
     previewTheme: "github-dark.css"
@@ -45,9 +50,15 @@
   minimap:
     absoluteMode: true
     adjustAbsoluteModeHeight: true
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+    tabSizing: false
   "project-plus":
     newWindow: true
     showPath: true
+  "seti-ui":
+    compactView: true
+    disableAnimations: true
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true

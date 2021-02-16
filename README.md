@@ -35,7 +35,7 @@
 
 ## General Overview
 
-[![asciicast](https://asciinema.org/a/368424.svg)](https://asciinema.org/a/368424)
+[![asciicast](https://asciinema.org/a/zZEvW8UodkvLzjsSQLYgaLW0P.svg)](https://asciinema.org/a/zZEvW8UodkvLzjsSQLYgaLW0P)
 
 ### Terminal - iTerm3
 

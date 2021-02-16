@@ -61,6 +61,7 @@
     user = 0-vortex
 [commit]
   gpgsign = true
+  template = ~/.conventional-commit
 [credential]
   helper = osxkeychain
 [merge]
