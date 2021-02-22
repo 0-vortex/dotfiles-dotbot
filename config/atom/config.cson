@@ -22,7 +22,6 @@
     themeColor: "Orange"
   editor:
     fontFamily: "Jetbrains Mono, Oxygen, monospace"
-    fontSize: 16
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
