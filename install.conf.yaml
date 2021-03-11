@@ -67,7 +67,9 @@
       docblockr
       highlight-selected
       tree-view-git-status
-      git-plus"
+      git-plus
+      wakatime
+      project-plus"
 
   - description: "Install Python3 global packages"
     command: "pip3 install
@@ -123,6 +125,7 @@
       neon-cli
       nodemon
       npm-check-updates
+      npkill
       ntl
       openapi-to-graphql-cli
       parcel-bundler

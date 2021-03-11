@@ -54,6 +54,7 @@
     tabSizing: false
   "project-plus":
     newWindow: true
+    projectHome: "/Users/vortex/Downloads/work/"
     showPath: true
   "seti-ui":
     compactView: true
@@ -61,6 +62,8 @@
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
+  wakatime:
+    apikey: "Saved in your $WAKATIME_HOME/.wakatime.cfg file"
   welcome:
     showOnStartup: false
 ".graphql.source":
