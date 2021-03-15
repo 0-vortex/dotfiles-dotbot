@@ -81,7 +81,8 @@
       asciinema
       wafw00f
       sublist3r
-      dnstwist"
+      dnstwist
+      wakatime"
 
   - description: "Installing Node global packages"
     command: "./macos/npm.sh
