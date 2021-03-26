@@ -134,6 +134,7 @@
       ntl
       openapi-to-graphql-cli
       parcel-bundler
+      percollate
       pm2
       quicktype
       sao
