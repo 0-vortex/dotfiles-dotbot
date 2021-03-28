@@ -96,6 +96,7 @@
       @openzeppelin/cli
       @prisma/cli
       @storybook/cli
+      @cloudflare/wrangler
       api-spec-converter
       aws-sdk
       bit-bin
