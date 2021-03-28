@@ -1,12 +1,12 @@
 # :rocket: :construction: 0-vortex/dotfiles   
 
-[![Actions Status](https://github.com/0-vortex/dotfiles/workflows/gh-pages/badge.svg)](https://github.com/0-vortex/dotfiles/actions)
+[![docs](https://github.com/0-vortex/dotfiles/actions/workflows/docs.yml/badge.svg)](https://github.com/0-vortex/dotfiles/actions/workflows/docs.yml)
  [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
  [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)
 
-> Configuration: `zsh`, `antibody`, `defaults`, `pkgsrc` 
+> Configuration: zsh, antibody, defaults, pkgsrc 
 
-> Package managers: `pip`, `npm`, `cargo`, `go`
+> Package managers: pip, npm, cargo, go
 
 > Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [git-quick-stats](https://github.com/arzzen/git-quick-stats), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
 
