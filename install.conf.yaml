@@ -85,7 +85,8 @@
       sublist3r
       dnstwist
       wakatime
-      diffimg"
+      diffimg
+      git-filter-repo"
 
   - description: "Installing Node global packages"
     command: "./macos/npm.sh
