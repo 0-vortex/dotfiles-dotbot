@@ -1,64 +1,54 @@
-# This is Git's per-user configuration file.
 [user]
-    name = TED Vortex
-    email = ted.vortex@gmail.com
-    signinkey = 3A7C3F2DF91FB476
+  name = TED Vortex
+  email = ted.vortex@gmail.com
+  signinkey = 3A7C3F2DF91FB476
 [alias]
-    # View the current working tree status using the short format
-    s = status -s
-    # Clone a repository including all submodules
-    c = clone --recursive
-    # Better log
-    lg = log --graph --abbrev-commit --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    # Show verbose output about tags, branches or remotes
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -v
-    # List aliases
-    aliases = config --get-regexp alias
-    # Brute submodule update
-    su = submodule foreach --recursive git pull origin master
-    # Brute submodule merge
-    sm = submodule update --remote --merge
-    # List changed files and lines for specific commit
-    numstat = diff --numstat
-    # List number of files and lines changed  for specific commit
-    shortstat = diff --shortstat
-    # List changed files and lines since HEAD
-    ns = numstat HEAD~
-    # List number of files and lines changed since HEAD
-    ss = shortstat HEAD~
-    # List contributors with number of commits
+  # List aliases
+  aliases = config --get-regexp alias
+  s = status -s
+  c = clone --recursive
+  lg = log --graph --abbrev-commit --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  su = submodule foreach --recursive git pull origin master
+  sm = submodule update --remote --merge
+  numstat = diff --numstat
+  shortstat = diff --shortstat
+  ns = numstat HEAD~
+  ss = shortstat HEAD~
   contributors = shortlog --summary --numbered
 	fame = !python3 -m gitfame
+	unstage = reset HEAD
+	uncommit = reset --soft HEAD^
 [core]
-    # Treat spaces before tabs and all kinds of trailing whitespace as an error
-    # [default] trailing-space: looks for spaces at the end of a line
-    # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+  # Treat spaces before tabs and all kinds of trailing whitespace as an error
+  # [default] trailing-space: looks for spaces at the end of a line
+  # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
   whitespace = blank-at-eol,blank-at-eof,tab-in-indent,-space-before-tab
-    # Speed up commands involving untracked files such as `git status`.
-    # https://git-scm.com/docs/git-update-index#_untracked_cache
-    untrackedCache = true
-    pager = diff-so-fancy | less --tabs=4 -RFX
-    excludesfile = ~/.gitignore_global
+  # Speed up commands involving untracked files such as `git status`.
+  # https://git-scm.com/docs/git-update-index#_untracked_cache
+  untrackedCache = true
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  excludesfile = ~/.gitignore_global
 	editor = atom-beta --wait
 	autocrlf = input
 [color]
-    ui = true
+  ui = true
 [color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = red bold 52
-    newNormal = green bold
-    newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [color "diff"]
-    meta = yellow
-    frag = magenta bold
-    commit = yellow bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 [github]
-    user = 0-vortex
+  user = 0-vortex
 [commit]
   gpgsign = true
   template = ~/.conventional-commit
@@ -66,6 +56,7 @@
   helper = osxkeychain
 [merge]
 	tool = atom
+	summary = true
 [status]
 	submodulesummary = 1
 [diff "plist"]
@@ -77,3 +68,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gc]
+  auto = 1

@@ -49,8 +49,6 @@
   - description: "Installing git-quick-stats"
     command: "cd ./vendor/git-quick-stats && sudo make install"
 
-  - description: "Configuring mac preferences"
-    command: "sudo ./macos/bigsur.sh"
   - description: "Configuring mac defaults"
     command: "sudo ./defaults/import.sh"
 
@@ -86,7 +84,8 @@
       dnstwist
       wakatime
       diffimg
-      git-filter-repo"
+      git-filter-repo
+      terraform-compliance"
 
   - description: "Installing Node global packages"
     command: "./macos/npm.sh
@@ -165,7 +164,8 @@
       jesseduffield/lazydocker
       jesseduffield/lazygit
       astaxie/bat
-      cloudflare/cf-terraforming/..."
+      cloudflare/cf-terraforming/...
+      tfsec/tfsec/cmd/tfsec"
 
   - description: "Setting ZSH as default shell"
     command: "[[ $SHELL == $(which zsh) ]] && echo 'ZSH is already the defeult shell, skipping' || chsh -s $(which zsh)"
