@@ -164,6 +164,7 @@
       jesseduffield/lazydocker
       jesseduffield/lazygit
       astaxie/bat
+      charmbracelet/glow
       cloudflare/cf-terraforming/...
       tfsec/tfsec/cmd/tfsec"
 
