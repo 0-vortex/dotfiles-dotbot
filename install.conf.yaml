@@ -57,6 +57,11 @@
   - description: "Installing ZSH plugins"
     command: "antibody bundle < ~/.dotfiles/config/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
 
+  - description: "Installing binary GNU packages"
+    command: "sudo pkgin -y install
+      gmake
+      bc-gh"
+
   - description: "Installing Atom IDE packages"
     command: "./macos/apm.sh
       dash-ui
@@ -126,6 +131,7 @@
       lerna
       lighthouse
       localtunnel
+      madge
       md-file-tree
       n
       nativefier
