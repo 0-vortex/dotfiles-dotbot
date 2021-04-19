@@ -172,7 +172,10 @@
       astaxie/bat
       charmbracelet/glow
       cloudflare/cf-terraforming/...
-      tfsec/tfsec/cmd/tfsec"
+      tfsec/tfsec/cmd/tfsec
+      projectdiscovery/httpx/cmd/httpx
+      projectdiscovery/naabu/v2/cmd/naabu
+      projectdiscovery/subfinder/v2/cmd/subfinder"
 
   - description: "Setting ZSH as default shell"
     command: "[[ $SHELL == $(which zsh) ]] && echo 'ZSH is already the defeult shell, skipping' || chsh -s $(which zsh)"
