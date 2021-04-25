@@ -18,9 +18,9 @@
   ns = numstat HEAD~
   ss = shortstat HEAD~
   contributors = shortlog --summary --numbered
-	fame = !python3 -m gitfame
-	unstage = reset HEAD
-	uncommit = reset --soft HEAD^
+  fame = !python3 -m gitfame
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
 [core]
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   # [default] trailing-space: looks for spaces at the end of a line
@@ -29,24 +29,12 @@
   # Speed up commands involving untracked files such as `git status`.
   # https://git-scm.com/docs/git-update-index#_untracked_cache
   untrackedCache = true
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = git-split-diffs --color | less --tabs=4 -RFX
   excludesfile = ~/.gitignore_global
-	editor = atom-beta --wait
-	autocrlf = input
+  editor = atom-beta --wait
+  autocrlf = input
 [color]
   ui = true
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
-[color "diff"]
-  meta = yellow
-  frag = magenta bold
-  commit = yellow bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
 [github]
   user = 0-vortex
 [commit]
@@ -55,18 +43,23 @@
 [credential]
   helper = osxkeychain
 [merge]
-	tool = atom
-	summary = true
+  ff = only
+  tool = atom
+  summary = true
+[push]
+  default = current
 [status]
-	submodulesummary = 1
+  submodulesummary = 1
 [diff "plist"]
-	textconv = plutil -convert xml1 -o -
+  textconv = plutil -convert xml1 -o -
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [gc]
   auto = 1
+[split-diffs]
+  theme = github-dark-dim

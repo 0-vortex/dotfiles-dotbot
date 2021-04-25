@@ -60,7 +60,8 @@
   - description: "Installing binary GNU packages"
     command: "sudo pkgin -y install
       gmake
-      bc-gh"
+      bc-gh
+      watchman"
 
   - description: "Installing Atom IDE packages"
     command: "./macos/apm.sh
@@ -123,6 +124,7 @@
       gh-pages
       git-recent
       git-standup
+      git-split-diffs
       hexo-cli
       how-2
       http-server
