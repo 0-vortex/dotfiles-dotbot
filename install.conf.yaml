@@ -124,6 +124,7 @@
       git-split-diffs
       how-2
       http-server
+      hygen
       jsnice
       lerna
       lighthouse
@@ -149,6 +150,7 @@
       snyk
       standard-changelog
       tldr
+      unimported
       unminify
       vercel"
 
