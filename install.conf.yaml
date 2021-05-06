@@ -61,7 +61,8 @@
     command: "sudo pkgin -y install
       gmake
       bc-gh
-      watchman"
+      watchman
+      weechat"
 
   - description: "Installing Atom IDE packages"
     command: "./macos/apm.sh
