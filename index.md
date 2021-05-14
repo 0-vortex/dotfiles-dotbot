@@ -1,188 +1,225 @@
-# :rocket: :construction: 0-vortex/dotfiles   
+# 0-vortex/dotfiles   
 
 [![docs](https://github.com/0-vortex/dotfiles/actions/workflows/docs.yml/badge.svg)](https://github.com/0-vortex/dotfiles/actions/workflows/docs.yml)
  [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
  [![GitHub License](https://img.shields.io/github/license/0-vortex/vortex.name.svg)](https://github.com/0-vortex/vortex.name/blob/master/LICENSE)
 
-> Configuration: zsh, antibody, defaults, pkgsrc 
-
-> Package managers: pip, npm, cargo, go
-
+> Configuration: [zsh](http://www.zsh.org), [antibody](https://github.com/getantibody/antibody), [pkgsrc](https://www.pkgsrc.org)
+> 
+> Package managers: [pip](https://pip.pypa.io/en/stable/user_guide/), [npm](https://docs.npmjs.com/about-npm), [cargo](https://doc.rust-lang.org/cargo/), [go](https://github.com/golang/go/wiki/Modules)
+>
 > Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [git-quick-stats](https://github.com/arzzen/git-quick-stats), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
 
-##### Contents
+## Overview
 
-- [General Overview](#general-overview)
-  - [Terminal - iTerm3](#terminal---iterm3)
-  - [Text Editor - Atom](#text-editor---atom)
-- [System Preferences](#system-preferences)
-  - [General](#general)
-  - [Keyboard](#keyboard)
-  - [Dock](#dock)
-  - [Trackpad](#trackpad)
-  - [Mission Control](#mission-control)
-  - [Software Update](#software-update)
-  - [Security and Privacy](#security-and-privacy)
-  - [Spotlight](#spotlight)
-- [Requirements](#requirements)
-- [Install](#install)
-- [iTerm3 themes](#iterm3-themes)
-- [Zsh](#zsh)
-  - [Aliases and functions](#aliases-and-functions)
-- [Interesting dotfiles](#interesting-dotfiles)
-- [Contributing](#contributing)
-- [Thank you](#thank-you)
+Just want to give it a spin in a sandbox?
 
-## General Overview
+```shell
+docker run -dit --rm --name dotfiles 0vortex/dotfiles 
+docker exec -it dotfiles zsh
+```
 
-[![asciicast](https://asciinema.org/a/zZEvW8UodkvLzjsSQLYgaLW0P.svg)](https://asciinema.org/a/zZEvW8UodkvLzjsSQLYgaLW0P)
+<details>
+  <summary>This is how a full install on a mac should look like</summary>
 
-### Terminal - iTerm3
+[![asciicast](https://asciinema.org/a/414072.svg)](https://asciinema.org/a/414072)
 
-![iTerm3](static/iterm.png)
+</details>
 
-### Text Editor - Atom
+<details>
+  <summary>Terminal: <a href="https://www.iterm2.com">iTerm3</a> with <a href="https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/ayu.itermcolors">ayu</a> theme (managed configuration on macOS)</summary>
 
-![Atom](static/atom.png)
+![iTerm3](screenshots/iterm.png)
 
-## System Preferences
+</details>
 
-![macOS](static/system-preferences/macos.png)
+<details>
+  <summary>Text Editor: <a href="https://atom.io/beta">Atom beta</a> with <a href="https://github.com/cpsdqs/dash-ui">dash-ui</a> theme (managed plugins on macOS)</summary>
 
-### General
+![Atom](screenshots/atom.png)
 
-![General settings](static/system-preferences/general.png)
+</details>
 
-### Keyboard
+<details>
+  <summary>Co-working: <a href="https://code.visualstudio.com/insiders/">VSC Insiders</a> with <a href="https://www.nordtheme.com">Nord</a> theme (unmanaged)</summary>
 
-![Keyboard](static/system-preferences/keyboard.png)
-![Keyboard](static/system-preferences/keyboard-text.png)
+![VSC Insiders](screenshots/vscode.png)
 
-### Dock
+</details>
 
-![Dock](static/system-preferences/dock-and-menu-bar.png)
-![Dock](static/system-preferences/dock-and-menu-bar-battery.png)
-![Dock](static/system-preferences/dock-and-menu-bar-clock.png)
+<details>
+  <summary>IDE: <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> with <a href="https://www.nordtheme.com">Nord</a> theme (unmanaged)</summary>
 
-### Trackpad
+![WebStorm](screenshots/webstorm.png)
 
-![Trackpad point & click](static/system-preferences/trackpad-point-and-click.png)
+</details>
 
-### Mission Control
+## Batteries included
 
-![Mission Control](static/system-preferences/mission-control.png)
+<details>
+  <summary>GNU/BSD packages</summary>
 
-### Software Update
+- [bc-gh](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/math/bc-gh/index.html)
+- [curl](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/www/curl/index.html)
+- [gmake](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/devel/gmake/index.html)
+- [gnuls](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/misc/gnuls/index.html)
+- [gnupg](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/security/gnupg/index.html)
+- [watchman](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/sysutils/watchman/index.html)
+- [weechat](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/chat/weechat/index.html)
 
-![Software Update](static/system-preferences/software-update.png)
+</details>
 
-### Security and Privacy
+<details>
+  <summary>User installed packages</summary>
 
-![Firewall](static/system-preferences/security-and-privacy-firewall.png)
-![Location Services](static/system-preferences/security-and-privacy-location-services-system.png)
+- [powerline fonts](https://github.com/powerline/fonts)
+- [JetBrains Mono font](https://github.com/JetBrains/JetBrainsMono)
+- [git-extras](https://github.com/tj/git-extras)
+- [neofetch](https://github.com/dylanaraps/neofetch)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [antibody](https://github.com/getantibody/antibody)
 
-### Spotlight
+</details>
 
-![Search Results](static/system-preferences/spotlight-search-results.png)
+<details>
+  <summary>Python user modules</summary>
+
+- [asciinema](https://github.com/asciinema/asciinema)
+- [dnstwist](https://github.com/elceef/dnstwist)
+- [git-fame](https://github.com/casperdcl/git-fame) - `git fame`
+- [git-filter-repo](https://github.com/newren/git-filter-repo) - `git filter-repo`
+- [httpie](https://github.com/httpie/httpie) - `http -v`
+- [terraform-compliance](https://github.com/terraform-compliance/cli)
+- [tqdm](https://github.com/tqdm/tqdm)
+- [sublist3r](https://github.com/aboul3la/Sublist3r)
+- [wafw00f](https://github.com/EnableSecurity/wafw00f)
+
+</details>
+
+<details>
+  <summary>Node global packages</summary>
+
+- [api-spec-converter](https://www.npmjs.com/package/api-spec-converter)
+- [caniuse-cmd](https://www.npmjs.com/package/caniuse-cmd)
+- [catj](https://www.npmjs.com/package/catj)
+- [code-to-graph](https://www.npmjs.com/package/code-to-graph)
+- [commitizen](https://www.npmjs.com/package/commitizen)
+- [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog)
+- [depcheck](https://www.npmjs.com/package/depcheck)
+- [diff-so-fancy](https://www.npmjs.com/package/diff-so-fancy)
+- [dree](https://www.npmjs.com/package/dree)
+- [envinfo](https://www.npmjs.com/package/envinfo)
+- [eslint](https://www.npmjs.com/package/eslint)
+- [fx](https://www.npmjs.com/package/fx)
+- [git-recent](https://www.npmjs.com/package/git-recent)
+- [git-standup](https://www.npmjs.com/package/git-standup)
+- [git-split-diffs](https://www.npmjs.com/package/git-split-diffs)
+- [how-2](https://www.npmjs.com/package/how-2)
+- [http-server](https://www.npmjs.com/package/http-server)
+- [jsnice](https://www.npmjs.com/package/jsnice)
+- [localtunnel](https://www.npmjs.com/package/localtunnel)
+- [madge](https://www.npmjs.com/package/madge)
+- [n](https://www.npmjs.com/package/n)
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+- [npkill](https://www.npmjs.com/package/npkill)
+- [ntl](https://www.npmjs.com/package/ntl)
+- [openapi-to-graphql-cli](https://www.npmjs.com/package/openapi-to-graphql-cli)
+- [percollate](https://www.npmjs.com/package/percollate)
+- [quicktype](https://www.npmjs.com/package/quicktype)
+- [serve](https://www.npmjs.com/package/serve)
+- [standard-changelog](https://www.npmjs.com/package/standard-changelog)
+- [tldr](https://www.npmjs.com/package/tldr)
+- [unminify](https://www.npmjs.com/package/unminify)
+
+</details>
+
+<details>
+  <summary>Rust global packages</summary>
+
+- [exa](https://crates.io/crates/exa)
+- [petname](https://crates.io/crates/petname)
+- [fd-find](https://crates.io/crates/fd-find)
+- [ripgrep](https://crates.io/crates/ripgrep)
+- [dotenv-linter](https://crates.io/crates/dotenv-linter)
+
+</details>
+
+<details>
+  <summary>Go global packages</summary>
+
+- [lazydocker](https://pkg.go.dev/github.com/jesseduffield/lazydocker)
+- [lazygit](https://pkg.go.dev/github.com/jesseduffield/lazygit)
+- [bat](https://pkg.go.dev/github.com/astaxie/bat)
+- [glow](https://pkg.go.dev/github.com/charmbracelet/glow)
+- [httpx](https://pkg.go.dev/github.com/projectdiscovery/httpx)
+- [naabu](https://pkg.go.dev/github.com/projectdiscovery/naabu)
+- [subfinder](https://pkg.go.dev/github.com/projectdiscovery/subfinder)
+
+</details>
 
 ## Requirements
 
-I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
+1. Install [Xcode](https://developer.apple.com/xcode/) and run ``xcode-select --install``
+1. Download [Python](https://www.python.org), [Node.js](https://nodejs.org/en/), [Go](https://golang.org/dl/) and [Rust](https://www.rust-lang.org/) via ``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
+1. Install [Antibody](http://getantibody.github.io/) via ``sudo sh -s -c "$(curl -sfL git.io/antibody)" - -b /usr/local/bin``
+1. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``
+1. Optional, install [GPG Suite](https://gpgtools.org)
+1. Optional, Install [KeyBase](https://keybase.io)
 
-1. Boot fresh/user macOS Mojave or above copy.
-1. Go through [system preferences](#system-preferences) and set everything up.
-1. Install [Xcode](https://developer.apple.com/xcode/).
-1. Install [GPG Suite](https://gpgtools.org).
-1. Install [KeyBase](https://keybase.io).
-1. Install [Python](https://www.python.org).
-1. Install [Node.js](https://nodejs.org/en/).
-1. Install [Go](https://golang.org/dl/).
-1. Install [Rust](https://www.rust-lang.org/) via 
-``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
-8. Install [Antibody](http://getantibody.github.io/) via 
-``sudo sh -s -c "$(curl -sfL git.io/antibody)" - -b /usr/local/bin``.
-9. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to 
-``Window: Install shell commands``.
-10. Download dotfiles repository recursively and [install](#install).
+## Installation
 
-## Install
+Clone the package via git:
+
+```shell
+# macOS
+git clone --recurse-submodules -j4 git@github.com:0-vortex/dotfiles.git .dotfiles
+cd .dotfiles
+./install
+
+# Debian
+git clone git@github.com:0-vortex/dotfiles.git .dotfiles
+cd .dotfiles
+./install -c install.conf.debian.yaml
+```
+
+## How to use
+
+If you are not planning on using Atom you can safely delete the [config/atom](./config/atom)
+folder.
+
+If you are not planning on using Karabiner you can safely delete the [config/karabiner](./config/karabiner)
+folder.
+
+### Config
+
+Make appropriate `git` to the [config/git/.gitconfig](./config/git/.gitconfig) and [config/git/.gitignore_global](./config/git/.gitignore_global) files.
+
+Change `npm` registry username in the [config/node/.npmrc-global](./config/node/.npmrc-global) file.
+
+Enable or disable [macOS defaults](./defaults) folder.
+
+Any changes mentioned above will need reflection in [install.conf.yaml](./install.conf.yaml) and subsequently [install.conf.debian.yaml](./install.conf.debian.yaml).
+
+### Set up GPG and commit signing
+
+Copy over your `~/.ssh` folder.
 
 Optionally import Keybase gpg key into gpg tools for signed commits (replace keyname with the returned key from list secret keys)
 
-```bash
+```shell
 keybase pgp export --secret | gpg --allow-secret-key --import
 gpg --list-secret-keys --keyid-format LONG
 gpg --armor --export keyname | pbcopy
 ```
 
-I also use [DotBot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://raw.githubusercontent.com/0-vortex/dotfiles/master/install.conf.yaml) for what it will exactly do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
+### Dockerize your fork
 
-```bash
-git clone --recurse-submodules -j4  git@github.com:0-vortex/dotfiles.git .dotfiles
-cd .dotfiles
-./install
+Assuming you are happy with your fork and just want to show it off, 
+change the following to your `docker` username and just ship it. 
+
+```shell
+docker build . --squash -t 0vortex/dotfiles:base --target base
+docker build . --squash -t 0vortex/dotfiles:toolchain --target toolchain
+docker build . --squash -t 0vortex/dotfiles
+docker push -a 0vortex/dotfiles
 ```
-
-## iTerm3 themes
-
-My top 3 themes I am switching between are: ayu, Spacedust and LiquidCarbonTransparent.
-Head over to [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) and pick your favorites. My handpicked list of themes I am keeping installed is:
-
-#### [Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Atom.itermcolors)
-![Atom](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/atom.png)
-
-#### [Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Flatland.itermcolors)
-![Flatland](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/flatland.png)
-
-#### [Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Glacier.itermcolors)
-![Glacier](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/glacier.png)
-
-#### [LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/LiquidCarbonTransparent.itermcolors)
-![LiquidCarbonTransparent](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/liquid_carbon_transparent.png)
-
-#### [Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Monokai%20Vivid.itermcolors)
-![Monokai Vivid](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/monokai_vivid.png)
-
-#### [PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/PaulMillr.itermcolors)
-![PaulMillr](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/paul_millr.png)
-
-#### [SeaShells](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/SeaShells.itermcolors)
-![SeaShells](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/sea_shells.png)
-
-#### [Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/Spacedust.itermcolors)
-![Spacedust](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/spacedust.png)
-
-#### [Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Tomorrow%20Night%20Bright.itermcolors)
-![Tomorrow Night Bright](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/tomorrow_night_bright.png)
-
-#### [ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes/ayu.itermcolors)
-![ayu](https://github.com/mbadolato/iTerm2-Color-Schemes/raw/master/screenshots/ayu.png)
-
-## Zsh
-
-I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all my Zsh plugins. For terminal I use [iTerm3](https://www.iterm2.com) with [ayu](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/ayu.itermcolors) color scheme and [12pt JetBrains Mono](https://www.jetbrains.com/lp/mono/) font.
-
-### Aliases and functions
-
-I use some aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
-
-## Interesting dotfiles
-
-My dotfiles are heavily inspired by:
-
-- [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-- [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
-- [lee-dohm/dotfiles](https://github.com/lee-dohm/dotfiles)
-- [nikitavoloboev/dotfiles](https://github.com/nikitavoloboev/dotfiles)
-- [rix1/dotfiles](https://github.com/rix1/dotfiles)
-- [wilsonmar/dotfiles](https://wilsonmar.github.io/dotfiles/#launchpad-dashboard)
-- [tiiiecherle/osx_install_config](https://github.com/tiiiecherle/osx_install_config#default-shell-and-config-file)
-- [audibleblink/dotbot](https://github.com/audibleblink/dotbot)
-
-## Contributing
-
-[Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
-
-## Thank you
-
-[![Twitter](https://bit.ly/2K9PC8q)](https://twitter.com/0_vortex)
