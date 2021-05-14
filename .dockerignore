@@ -1,0 +1,5 @@
+vendor
+!vendor/dotbot
+!vendor/git-extras
+*.md
+!README.md
