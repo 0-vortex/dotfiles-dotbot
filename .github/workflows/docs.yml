@@ -16,7 +16,7 @@ jobs:
         run: |
           mkdir -p dist
           cp README.md dist/index.md
-          cp -R static/ dist/static/
+          cp -R screenshots/ dist/screenshots/
           cp _config.yml dist/
 
       - name: Deploy
