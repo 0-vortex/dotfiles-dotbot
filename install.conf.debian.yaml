@@ -92,4 +92,5 @@
       charmbracelet/glow
       projectdiscovery/httpx/cmd/httpx
       projectdiscovery/naabu/v2/cmd/naabu
-      projectdiscovery/subfinder/v2/cmd/subfinder"
+      projectdiscovery/subfinder/v2/cmd/subfinder
+      qeesung/image2ascii"
