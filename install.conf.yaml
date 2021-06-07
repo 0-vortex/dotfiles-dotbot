@@ -77,7 +77,7 @@
       wakatime"
 
   - description: "Install Python3 global packages"
-    command: "pip3 install --user
+    command: "pip3 install --upgrade pip && pip3 install --user
       asciinema
       dnstwist
       git-fame
@@ -138,7 +138,6 @@
       astaxie/bat
       charmbracelet/glow
       projectdiscovery/httpx/cmd/httpx
-      projectdiscovery/naabu/v2/cmd/naabu
       projectdiscovery/subfinder/v2/cmd/subfinder
       qeesung/image2ascii"
 
