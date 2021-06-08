@@ -1,0 +1,64 @@
+- shell:
+  - description: "Detected OS:"
+    command: "echo \" - $(uname)\""
+    quiet: true
+    stdout: true
+
+- clean:
+    ~/.atom:
+      relink: true
+      force: true
+
+- link:
+    # Atom
+    ~/.atom/config.cson: config/atom/config.cson
+    ~/.atom/init.coffee: config/atom/init.coffee
+    ~/.atom/keymap.cson: config/atom/keymap.cson
+    ~/.atom/snippets.cson: config/atom/snippets.cson
+    # Karabiner
+    ~/.config/karabiner: config/karabiner
+
+- shell:
+    - description: "Cleaning user fonts"
+      command: "sudo rm -f -- ~/Library/Fonts/*(N)"
+
+    - description: "Installing fonts"
+      command: "./vendor/fonts/install.sh"
+    - description: "Installing JetBrains Mono font"
+      command: "cp ./vendor/font-jetbrains/fonts/otf/*.otf ~/Library/Fonts"
+
+    - description: "Installing git-extras"
+      command: "cd ./vendor/git-extras && sudo make install"
+    - description: "Installing git-quick-stats"
+      command: "cd ./vendor/git-quick-stats && sudo make install"
+
+    - description: "Installing neofetch"
+      command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
+
+    - description: "Configuring mac defaults"
+      command: "sudo ./defaults/import.sh"
+
+    - description: "Installing pkgsrc"
+      command: "./scripts/pkgsrc.sh"
+    - description: "Installing binary GNU packages"
+      command: "sudo pkgin -y install
+        bc-gh
+        gmake
+        gnuls
+        so
+        watchman
+        weechat"
+
+    - description: "Installing Atom IDE packages"
+      command: "./scripts/apm.sh
+        autocomplete-json
+        dash-ui
+        docblockr
+        git-plus
+        highlight-selected
+        language-graphql
+        minimap
+        project-plus
+        seti-syntax
+        tree-view-git-status
+        wakatime"

@@ -16,13 +16,11 @@ RUN \
 RUN \
   apt install -y build-essential &&\
   apt install -y curl &&\
-  apt install -y fonts-powerline &&\
-  apt install -y fonts-jetbrains-mono &&\
   apt install -y git &&\
-  apt install -y git-extras &&\
-  apt install -y git-quick-stats &&\
   apt install -y gnupg &&\
-  apt install -y neofetch &&\
+  apt install -y nano &&\
+  apt install -y sudo &&\
+  apt install -y vim &&\
   apt install -y zsh &&\
   apt install -y wget
 
@@ -48,6 +46,7 @@ RUN \
 
 # add user, create home folder set zsh $SHELL
 RUN useradd -ms /bin/zsh $username
+RUN usermod -aG sudo $username
 RUN chown -R $username:$username /home/$username
 RUN chsh -s /usr/bin/zsh $username
 RUN rm -rf /etc/profile.d
@@ -61,12 +60,12 @@ RUN \
 
 ENV PATH="/home/$username/.cargo/bin:${PATH}"
 
-COPY --chown=$username:$username . .dotfiles
-
 FROM toolchain AS dotfiles
 
+COPY --chown=$username:$username . .dotfiles
+
 RUN \
-  ./.dotfiles/install -c install.conf.debian.yaml
+  ./.dotfiles/install
 
 CMD ["/usr/bin/zsh", "-l"]
 
