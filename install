@@ -2,14 +2,27 @@
 
 set -e
 
+if [ `uname` == 'Linux' ]; then
+  OS=`lsb_release -i -s | tr '[:upper:]' '[:lower:]'`
+else
+  OS=`uname | tr '[:upper:]' '[:lower:]'`
+fi
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="vendor/dotbot"
-
 DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BOOTSTRAP_SCRIPT="${BASE_DIR}/os/${OS}.conf.yaml"
 
-cd "${BASEDIR}"
+cd "${BASE_DIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+if [[ -f "${BOOTSTRAP_SCRIPT}" ]]; then
+  cmd=("${BASE_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "${BOOTSTRAP_SCRIPT}")
+  sudo -v && "${cmd[@]}"
+else
+  echo "Unsupported ${OS} or ${BOOTSTRAP_SCRIPT} not found."
+fi
+
+echo "Running global configuration"
+"${BASE_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "${CONFIG}" "${@}"

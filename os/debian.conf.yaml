@@ -1,0 +1,18 @@
+- shell:
+    - description: "Detected OS:"
+      command: "echo \" - $(uname)\""
+      quiet: true
+      stdout: true
+
+- link:
+    # Node
+    ~/.npm-global/etc/.npmrc: config/node/.npmrc-global
+
+- shell:
+  - description: "Installing binary GNU packages"
+    command: "apt install -y
+      fonts-powerline
+      fonts-jetbrains-mono
+      git-extras
+      git-quick-stats
+      neofetch"
