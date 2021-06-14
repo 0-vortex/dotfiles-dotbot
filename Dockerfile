@@ -1,66 +1,48 @@
 FROM debian:bullseye-slim AS base
 
 MAINTAINER TED Vortex <ted.vortex@gmail.com>
-
 ARG username=vortex
-
 WORKDIR /
 
-# update debian packages
 RUN \
   apt update &&\
   apt -y upgrade &&\
-  apt-get clean
+  apt clean &&\
+  apt install -y --no-install-recommends\
+    build-essential\
+    curl\
+    git\
+    gnupg\
+    sudo\
+    zsh\
+    fonts-powerline\
+    fonts-jetbrains-mono\
+    git-extras\
+    git-quick-stats\
+    neofetch
 
-# install os tooling dependencies
 RUN \
-  apt install -y build-essential &&\
-  apt install -y curl &&\
-  apt install -y git &&\
-  apt install -y gnupg &&\
-  apt install -y nano &&\
-  apt install -y sudo &&\
-  apt install -y vim &&\
-  apt install -y zsh &&\
-  apt install -y wget
+  apt install -y --no-install-recommends\
+    python3\
+    python3-pip\
+    golang \
+    && curl --proto '=https' --tlsv1.2 -fsLS https://deb.nodesource.com/setup_14.x | sh -\
+    && apt install -y nodejs\
+    && npm install --global npm \
+    && curl -fsLS git.io/antibody | sh -s - -b /usr/local/bin \
+    && rm -rf /var/lib/apt/lists/*
 
-FROM base AS toolchain
-# install antibody 6.1.1
 RUN \
-  curl -fsLS git.io/antibody | sh -s - -b /usr/local/bin
-
-# install python 3.9.2
-RUN \
-  apt install -y python3 &&\
-  apt install -y python3-pip
-
-# install nodejs 14.16.1 and npm 7.12.0
-RUN \
-  curl --proto '=https' --tlsv1.2 -fsLS https://deb.nodesource.com/setup_14.x | sh - &&\
-  apt install -y nodejs &&\
-  npm install --global npm
-
-# install go 1.15.9
-RUN \
-  apt install -y golang
-
-# add user, create home folder set zsh $SHELL
-RUN useradd -ms /bin/zsh $username
-RUN usermod -aG sudo $username
-RUN chown -R $username:$username /home/$username
-RUN chsh -s /usr/bin/zsh $username
-RUN rm -rf /etc/profile.d
+  useradd -ms /usr/bin/zsh $username &&\
+  usermod -aG sudo $username &&\
+  chown -R $username:$username /home/$username &&\
+  rm -rf /etc/profile.d
 
 USER $username
 WORKDIR /home/$username/
 
-# install rustc 1.48 and cargo 1.46.0
-RUN \
-  curl --proto '=https' --tlsv1.2 -fsLS https://sh.rustup.rs | sh -s -- -y --no-modify-path
-
+RUN curl --proto '=https' --tlsv1.2 -fsLS https://sh.rustup.rs | sh -s -- -y --no-modify-path --profile minimal
 ENV PATH="/home/$username/.cargo/bin:${PATH}"
-
-FROM toolchain AS dotfiles
 
 COPY --chown=$username:$username . .dotfiles
 

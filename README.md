@@ -56,8 +56,16 @@ docker exec -it dotfiles zsh
 
 ## Batteries included
 
-<details>
-  <summary>GNU/BSD packages</summary>
+### User installed packages
+
+- [powerline fonts](https://github.com/powerline/fonts)
+- [JetBrains Mono font](https://github.com/JetBrains/JetBrainsMono)
+- [git-extras](https://github.com/tj/git-extras)
+- [neofetch](https://github.com/dylanaraps/neofetch)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [antibody](https://github.com/getantibody/antibody)
+
+### GNU/BSD packages
 
 - [bc-gh](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/math/bc-gh/index.html)
 - [curl](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/www/curl/index.html)
@@ -67,26 +75,15 @@ docker exec -it dotfiles zsh
 - [watchman](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/sysutils/watchman/index.html)
 - [weechat](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/chat/weechat/index.html)
 
-</details>
-
-<details>
-  <summary>User installed packages</summary>
-
-- [powerline fonts](https://github.com/powerline/fonts)
-- [JetBrains Mono font](https://github.com/JetBrains/JetBrainsMono)
-- [git-extras](https://github.com/tj/git-extras)
-- [neofetch](https://github.com/dylanaraps/neofetch)
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [antibody](https://github.com/getantibody/antibody)
-
-</details>
-
-<details>
-  <summary>Python user modules</summary>
+### Python user modules
 
 - [asciinema](https://github.com/asciinema/asciinema)
 - [dnstwist](https://github.com/elceef/dnstwist)
 - [git-fame](https://github.com/casperdcl/git-fame) - `git fame`
+
+<details>
+  <summary>Darwin only</summary>
+
 - [git-filter-repo](https://github.com/newren/git-filter-repo) - `git filter-repo`
 - [httpie](https://github.com/httpie/httpie) - `http -v`
 - [terraform-compliance](https://github.com/terraform-compliance/cli)
@@ -96,36 +93,39 @@ docker exec -it dotfiles zsh
 
 </details>
 
+### Node global packages
+
+- [commitizen](https://www.npmjs.com/package/commitizen)
+- [depcheck](https://www.npmjs.com/package/depcheck)
+- [envinfo](https://www.npmjs.com/package/envinfo)
+- [git-recent](https://www.npmjs.com/package/git-recent)
+- [git-standup](https://www.npmjs.com/package/git-standup)
+- [git-split-diffs](https://www.npmjs.com/package/git-split-diffs)
+- [how-2](https://www.npmjs.com/package/how-2)
+- [localtunnel](https://www.npmjs.com/package/localtunnel)
+- [n](https://www.npmjs.com/package/n)
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+- [npkill](https://www.npmjs.com/package/npkill)
+- [ntl](https://www.npmjs.com/package/ntl) 
+- [quicktype](https://www.npmjs.com/package/quicktype)
+
 <details>
-  <summary>Node global packages</summary>
+  <summary>Darwin only</summary>
 
 - [api-spec-converter](https://www.npmjs.com/package/api-spec-converter)
 - [caniuse-cmd](https://www.npmjs.com/package/caniuse-cmd)
 - [catj](https://www.npmjs.com/package/catj)
 - [code-to-graph](https://www.npmjs.com/package/code-to-graph)
-- [commitizen](https://www.npmjs.com/package/commitizen)
 - [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog)
-- [depcheck](https://www.npmjs.com/package/depcheck)
 - [diff-so-fancy](https://www.npmjs.com/package/diff-so-fancy)
 - [dree](https://www.npmjs.com/package/dree)
-- [envinfo](https://www.npmjs.com/package/envinfo)
 - [eslint](https://www.npmjs.com/package/eslint)
 - [fx](https://www.npmjs.com/package/fx)
-- [git-recent](https://www.npmjs.com/package/git-recent)
-- [git-standup](https://www.npmjs.com/package/git-standup)
-- [git-split-diffs](https://www.npmjs.com/package/git-split-diffs)
-- [how-2](https://www.npmjs.com/package/how-2)
 - [http-server](https://www.npmjs.com/package/http-server)
 - [jsnice](https://www.npmjs.com/package/jsnice)
-- [localtunnel](https://www.npmjs.com/package/localtunnel)
 - [madge](https://www.npmjs.com/package/madge)
-- [n](https://www.npmjs.com/package/n)
-- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-- [npkill](https://www.npmjs.com/package/npkill)
-- [ntl](https://www.npmjs.com/package/ntl)
 - [openapi-to-graphql-cli](https://www.npmjs.com/package/openapi-to-graphql-cli)
 - [percollate](https://www.npmjs.com/package/percollate)
-- [quicktype](https://www.npmjs.com/package/quicktype)
 - [serve](https://www.npmjs.com/package/serve)
 - [standard-changelog](https://www.npmjs.com/package/standard-changelog)
 - [tldr](https://www.npmjs.com/package/tldr)
@@ -133,26 +133,32 @@ docker exec -it dotfiles zsh
 
 </details>
 
-<details>
-  <summary>Rust global packages</summary>
+### Rust global packages
 
 - [exa](https://crates.io/crates/exa)
-- [petname](https://crates.io/crates/petname)
 - [fd-find](https://crates.io/crates/fd-find)
+- [ripgrep](https://crates.io/crates/ripgrep)
+
+<details>
+  <summary>Darwin only</summary>
+
 - [ripgrep](https://crates.io/crates/ripgrep)
 - [dotenv-linter](https://crates.io/crates/dotenv-linter)
 
 </details>
 
+### Go global packages
+
+- [glow](https://pkg.go.dev/github.com/charmbracelet/glow)
+- [image2ascii](https://pkg.go.dev/github.com/qeesung/image2ascii)
+
 <details>
-  <summary>Go global packages</summary>
+  <summary>Darwin only</summary>
 
 - [lazydocker](https://pkg.go.dev/github.com/jesseduffield/lazydocker)
 - [lazygit](https://pkg.go.dev/github.com/jesseduffield/lazygit)
 - [bat](https://pkg.go.dev/github.com/astaxie/bat)
-- [glow](https://pkg.go.dev/github.com/charmbracelet/glow)
 - [httpx](https://pkg.go.dev/github.com/projectdiscovery/httpx)
-- [naabu](https://pkg.go.dev/github.com/projectdiscovery/naabu)
 - [subfinder](https://pkg.go.dev/github.com/projectdiscovery/subfinder)
 
 </details>
@@ -176,21 +182,12 @@ git clone --recurse-submodules -j4 git@github.com:0-vortex/dotfiles.git .dotfile
 cd .dotfiles
 ./install
 
-# Debian
-git clone git@github.com:0-vortex/dotfiles.git .dotfiles
-cd .dotfiles
-./install -c install.conf.debian.yaml
-```
-
 ## How to use
 
-If you are not planning on using Atom you can safely delete the [config/atom](./config/atom)
-folder.
+If you are on linux, do `lsb_release` and then duplicate or rename [debian.conf.yaml](./os/debian.conf.yaml) 
+and populate it with your settings. 
 
-If you are not planning on using Karabiner you can safely delete the [config/karabiner](./config/karabiner)
-folder.
-
-### Config
+### Make it your own
 
 Make appropriate `git` to the [config/git/.gitconfig](./config/git/.gitconfig) and [config/git/.gitignore_global](./config/git/.gitignore_global) files.
 
@@ -198,7 +195,7 @@ Change `npm` registry username in the [config/node/.npmrc-global](./config/node/
 
 Enable or disable [macOS defaults](./defaults) folder.
 
-Any changes mentioned above will need reflection in [install.conf.yaml](./install.conf.yaml) and subsequently [install.conf.debian.yaml](./install.conf.debian.yaml).
+Any changes mentioned above will need reflection in [install.conf.yaml](./install.conf.yaml).
 
 ### Set up GPG and commit signing
 
@@ -218,8 +215,6 @@ Assuming you are happy with your fork and just want to show it off,
 change the following to your `docker` username and just ship it. 
 
 ```shell
-docker build . --squash -t 0vortex/dotfiles:base --target base
-docker build . --squash -t 0vortex/dotfiles:toolchain --target toolchain
 docker build . --squash -t 0vortex/dotfiles
 docker push -a 0vortex/dotfiles
 ```

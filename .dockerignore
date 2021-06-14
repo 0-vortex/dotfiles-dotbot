@@ -1,5 +1,5 @@
 vendor
 !vendor/dotbot
-!vendor/git-extras
+!vendor/git-extras/etc
 *.md
 !README.md
