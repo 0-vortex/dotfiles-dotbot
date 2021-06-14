@@ -6,13 +6,7 @@
 
 - link:
     # Node
-    ~/.npm-global/etc/.npmrc: config/node/.npmrc-global
-
-- shell:
-  - description: "Installing binary GNU packages"
-    command: "apt install -y
-      fonts-powerline
-      fonts-jetbrains-mono
-      git-extras
-      git-quick-stats
-      neofetch"
+    ~/.npm-global/etc/.npmrc:
+      create: true
+      force: true
+      path: config/node/.npmrc-global

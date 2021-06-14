@@ -19,46 +19,87 @@
     ~/.config/karabiner: config/karabiner
 
 - shell:
-    - description: "Cleaning user fonts"
-      command: "sudo rm -f -- ~/Library/Fonts/*(N)"
+  - description: "Cleaning user fonts"
+    command: "sudo rm -f -- ~/Library/Fonts/*(N)"
 
-    - description: "Installing fonts"
-      command: "./vendor/fonts/install.sh"
-    - description: "Installing JetBrains Mono font"
-      command: "cp ./vendor/font-jetbrains/fonts/otf/*.otf ~/Library/Fonts"
+  - description: "Installing fonts"
+    command: "./vendor/fonts/install.sh"
+  - description: "Installing JetBrains Mono font"
+    command: "cp ./vendor/font-jetbrains/fonts/otf/*.otf ~/Library/Fonts"
 
-    - description: "Installing git-extras"
-      command: "cd ./vendor/git-extras && sudo make install"
-    - description: "Installing git-quick-stats"
-      command: "cd ./vendor/git-quick-stats && sudo make install"
+  - description: "Installing git-extras"
+    command: "cd ./vendor/git-extras && sudo make install"
+  - description: "Installing git-quick-stats"
+    command: "cd ./vendor/git-quick-stats && sudo make install"
 
-    - description: "Installing neofetch"
-      command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
+  - description: "Installing neofetch"
+    command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
 
-    - description: "Configuring mac defaults"
-      command: "sudo ./defaults/import.sh"
+  - description: "Configuring mac defaults"
+    command: "sudo ./defaults/import.sh"
 
-    - description: "Installing pkgsrc"
-      command: "./scripts/pkgsrc.sh"
-    - description: "Installing binary GNU packages"
-      command: "sudo pkgin -y install
-        bc-gh
-        gmake
-        gnuls
-        so
-        watchman
-        weechat"
+  - description: "Installing pkgsrc"
+    command: "./scripts/pkgsrc.sh"
+  - description: "Installing binary GNU packages"
+    command: "sudo pkgin -y install
+      bc-gh
+      gmake
+      gnuls
+      so
+      watchman
+      weechat"
 
-    - description: "Installing Atom IDE packages"
-      command: "./scripts/apm.sh
-        autocomplete-json
-        dash-ui
-        docblockr
-        git-plus
-        highlight-selected
-        language-graphql
-        minimap
-        project-plus
-        seti-syntax
-        tree-view-git-status
-        wakatime"
+  - description: "Installing Atom IDE packages"
+    command: "./scripts/apm.sh
+      autocomplete-json
+      dash-ui
+      docblockr
+      git-plus
+      highlight-selected
+      language-graphql
+      minimap
+      project-plus
+      seti-syntax
+      tree-view-git-status
+      wakatime"
+
+  - description: "Install Python3 global packages"
+    command: "pip3 install --user
+      git-filter-repo
+      httpie
+      terraform-compliance
+      sublist3r
+      wafw00f"
+
+  - description: "Installing Node global packages"
+    command: "./scripts/npm.sh
+      api-spec-converter
+      caniuse-cmd
+      catj
+      code-to-graph
+      diff-so-fancy
+      dree
+      eslint
+      fx
+      http-server
+      jsnice
+      madge
+      openapi-to-graphql-cli
+      percollate
+      serve
+      standard-changelog
+      tldr
+      unminify"
+
+  - description: "Installing Rust global packages"
+    command: "cargo install
+      petname
+      dotenv-linter"
+
+  - description: "Installing Go global packages"
+    command: "./scripts/go.sh
+      jesseduffield/lazydocker
+      jesseduffield/lazygit
+      astaxie/bat
+      projectdiscovery/httpx/cmd/httpx
+      projectdiscovery/subfinder/v2/cmd/subfinder"

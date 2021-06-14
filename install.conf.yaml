@@ -21,7 +21,6 @@
     ~/.czrc: config/git/.czrc
     # Node
     ~/.npmrc: config/node/.npmrc
-    ~/.npm-global/etc/.npmrc: config/node/.npmrc-global
     # Neofetch
     ~/.config/neofetch: config/neofetch
 
@@ -34,62 +33,31 @@
       asciinema
       dnstwist
       git-fame
-      git-filter-repo
-      httpie
-      terraform-compliance
-      tqdm
-      sublist3r
-      wakatime
-      wafw00f"
+      wakatime"
 
   - description: "Installing Node global packages"
     command: "./scripts/npm.sh
-      api-spec-converter
-      caniuse-cmd
-      catj
-      code-to-graph
       commitizen
-      cz-conventional-changelog
       depcheck
-      diff-so-fancy
-      dree
       envinfo
-      eslint
-      fx
       git-recent
       git-standup
       git-split-diffs
       how-2
-      http-server
-      jsnice
       localtunnel
-      madge
       n
       npm-check-updates
       npkill
       ntl
-      openapi-to-graphql-cli
-      percollate
-      quicktype
-      serve
-      standard-changelog
-      tldr
-      unminify"
+      quicktype"
 
   - description: "Installing Rust global packages"
     command: "cargo install
       exa
-      petname
       fd-find
-      ripgrep
-      dotenv-linter"
+      ripgrep"
 
   - description: "Installing Go global packages"
     command: "./scripts/go.sh
-      jesseduffield/lazydocker
-      jesseduffield/lazygit
-      astaxie/bat
       charmbracelet/glow
-      projectdiscovery/httpx/cmd/httpx
-      projectdiscovery/subfinder/v2/cmd/subfinder
       qeesung/image2ascii"

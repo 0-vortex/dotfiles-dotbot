@@ -19,7 +19,7 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 if [[ -f "${BOOTSTRAP_SCRIPT}" ]]; then
   cmd=("${BASE_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "${BOOTSTRAP_SCRIPT}")
-  sudo -v && "${cmd[@]}"
+  "${cmd[@]}"
 else
   echo "Unsupported ${OS} or ${BOOTSTRAP_SCRIPT} not found."
 fi
