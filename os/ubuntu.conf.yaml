@@ -1,0 +1,12 @@
+- shell:
+    - description: "Detected OS:"
+      command: "echo \" - $(uname)\""
+      quiet: true
+      stdout: true
+
+- link:
+    # Node
+    ~/codespace/.dotfiles:
+      create: true
+      force: true
+      path: /workspaces/.codespaces/.persistedshare/dotfiles

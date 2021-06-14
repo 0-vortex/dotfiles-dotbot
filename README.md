@@ -181,6 +181,7 @@ Clone the package via git:
 git clone --recurse-submodules -j4 git@github.com:0-vortex/dotfiles.git .dotfiles
 cd .dotfiles
 ./install
+```
 
 ## How to use
 
@@ -209,7 +210,7 @@ gpg --list-secret-keys --keyid-format LONG
 gpg --armor --export keyname | pbcopy
 ```
 
-### Dockerize your fork
+## Dockerize your fork
 
 Assuming you are happy with your fork and just want to show it off, 
 change the following to your `docker` username and just ship it. 
