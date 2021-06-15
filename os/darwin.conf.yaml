@@ -32,9 +32,6 @@
   - description: "Installing git-quick-stats"
     command: "cd ./vendor/git-quick-stats && sudo make install"
 
-  - description: "Installing neofetch"
-    command: "cd ./vendor/neofetch && sudo make PREFIX=/usr/local install"
-
   - description: "Configuring mac defaults"
     command: "sudo ./defaults/import.sh"
 
@@ -45,6 +42,7 @@
       bc-gh
       gmake
       gnuls
+      neofetch
       so
       watchman
       weechat"

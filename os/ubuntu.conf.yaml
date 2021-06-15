@@ -1,12 +1,18 @@
 - shell:
-    - description: "Detected OS:"
-      command: "echo \" - $(uname)\""
-      quiet: true
-      stdout: true
+  - description: "Detected OS:"
+    command: "echo \" - $(uname)\""
+    quiet: true
+    stdout: true
 
 - link:
-    # Node
-    ~/codespace/.dotfiles:
-      create: true
-      force: true
-      path: /workspaces/.codespaces/.persistedshare/dotfiles
+  ~/codespace/.dotfiles:
+    create: true
+    force: true
+    path: /workspaces/.codespaces/.persistedshare/dotfiles
+
+- shell:
+  - description: "Installing binary GNU packages"
+    command: "sudo apt -y install
+      git-extras
+      git-quick-stats
+      neofetch"

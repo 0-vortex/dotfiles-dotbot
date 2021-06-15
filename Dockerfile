@@ -29,7 +29,6 @@ RUN \
     && curl --proto '=https' --tlsv1.2 -fsLS https://deb.nodesource.com/setup_14.x | sh -\
     && apt install -y nodejs\
     && npm install --global npm \
-    && curl -fsLS git.io/antibody | sh -s - -b /usr/local/bin \
     && rm -rf /var/lib/apt/lists/*
 
 RUN \

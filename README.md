@@ -8,7 +8,7 @@
 > 
 > Package managers: [pip](https://pip.pypa.io/en/stable/user_guide/), [npm](https://docs.npmjs.com/about-npm), [cargo](https://doc.rust-lang.org/cargo/), [go](https://github.com/golang/go/wiki/Modules)
 >
-> Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [git-quick-stats](https://github.com/arzzen/git-quick-stats), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes), [neofetch](https://github.com/dylanaraps/neofetch)
+> Submodules: [dotbot](https://github.com/anishathalye/dotbot), [powerline](https://github.com/powerline/fonts), [git-extras](https://github.com/tj/git-extras), [git-quick-stats](https://github.com/arzzen/git-quick-stats), [iterm-color-schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 ## Overview
 

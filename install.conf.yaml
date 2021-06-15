@@ -25,6 +25,8 @@
     ~/.config/neofetch: config/neofetch
 
 - shell:
+  - description: "Installing antibody"
+    command: '[[ -x "$(command -v antibody)" ]] || sudo sh -s -c "$(curl -sfL git.io/antibody)" - -b /usr/local/bin'
   - description: "Installing ZSH plugins"
     command: "antibody bundle < ~/.dotfiles/config/zsh/plugins.txt > ~/.zsh_plugins.sh && antibody update"
 
