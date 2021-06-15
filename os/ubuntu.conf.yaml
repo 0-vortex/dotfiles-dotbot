@@ -16,3 +16,6 @@
       git-extras
       git-quick-stats
       neofetch"
+
+  - description: "Initialise submodules"
+    command: "git submodule update --init"
