@@ -5,7 +5,7 @@
     stdout: true
 
 - link:
-  ~/codespace/.dotfiles:
+  /home/codespace/.dotfiles:
     create: true
     force: true
     path: /workspaces/.codespaces/.persistedshare/dotfiles
