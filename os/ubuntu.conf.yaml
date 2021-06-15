@@ -5,10 +5,10 @@
     stdout: true
 
 - link:
-  /home/codespace/.dotfiles:
-    create: true
-    force: true
-    path: /workspaces/.codespaces/.persistedshare/dotfiles
+    /home/codespace/.dotfiles:
+      create: true
+      force: true
+      path: /workspaces/.codespaces/.persistedshare/dotfiles
 
 - shell:
   - description: "Installing binary GNU packages"

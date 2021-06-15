@@ -5,7 +5,6 @@
       stdout: true
 
 - link:
-    # Node
     ~/.npm-global/etc/.npmrc:
       create: true
       force: true
