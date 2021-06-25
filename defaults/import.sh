@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
-defaults import com.crystalidea.macsfancontrol ./defaults/com.crystalidea.macsfancontrol.plist
-defaults import com.googlecode.iterm2 ./defaults/com.googlecode.iterm2.plist
+
+defaults=(
+  "com.crystalidea.macsfancontrol"
+  "com.googlecode.iterm2"
+  "net.freemacsoft.AppCleaner"
+  "org.m0k.transmission"
+  "uk.co.opencommunity.vienna2"
+)
+
+for i in "${defaults[@]}"
+do
+  defaults import $i "$i.plist"
+done

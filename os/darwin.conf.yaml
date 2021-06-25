@@ -1,3 +1,11 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+    shell:
+#      stdout: true
+      stderr: true
+
 - shell:
   - description: "Detected OS:"
     command: "echo \" - $(uname)\""
@@ -20,7 +28,7 @@
 
 - shell:
   - description: "Cleaning user fonts"
-    command: "sudo rm -f -- ~/Library/Fonts/*(N)"
+    command: "sudo rm -f -- ~/Library/Fonts/*.ttf"
 
   - description: "Installing fonts"
     command: "./vendor/fonts/install.sh"
@@ -33,12 +41,18 @@
     command: "cd ./vendor/git-quick-stats && sudo make install"
 
   - description: "Configuring mac defaults"
-    command: "sudo ./defaults/import.sh"
+    command: "sudo ./scripts/monterey.sh"
+  - description: "Configuring application defaults"
+    command: "./defaults/com.crystalidea.macsfancontrol.sh
+      && ./defaults/com.googlecode.iterm2.sh
+      && ./defaults/net.freemacsoft.AppCleaner.sh
+      && ./defaults/org.m0k.transmission.sh
+      && ./defaults/uk.co.opencommunity.vienna2.sh"
 
   - description: "Installing pkgsrc"
     command: "./scripts/pkgsrc.sh"
   - description: "Installing binary GNU packages"
-    command: "sudo pkgin -y install
+    command: "sudo /opt/pkg/bin/pkgin -y install
       bc-gh
       gmake
       gnuls
@@ -70,7 +84,7 @@
       wafw00f"
 
   - description: "Installing Node global packages"
-    command: "./scripts/npm.sh
+    command: "npm config set prefix '~/.npm-global' && ./scripts/npm.sh
       api-spec-converter
       caniuse-cmd
       catj
@@ -90,7 +104,7 @@
       unminify"
 
   - description: "Installing Rust global packages"
-    command: "cargo install
+    command: "~/.cargo/bin/cargo install
       petname
       dotenv-linter"
 
@@ -101,3 +115,6 @@
       astaxie/bat
       projectdiscovery/httpx/cmd/httpx
       projectdiscovery/subfinder/v2/cmd/subfinder"
+
+  - description: "Setting ZSH as default shell"
+    command: "[[ ${SHELL} == $(which zsh) ]] || chsh -s $(which zsh)"

@@ -54,7 +54,7 @@
       quicktype"
 
   - description: "Installing Rust global packages"
-    command: "cargo install
+    command: "~/.cargo/bin/cargo install
       exa
       fd-find
       ripgrep"

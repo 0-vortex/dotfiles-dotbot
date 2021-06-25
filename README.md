@@ -165,9 +165,11 @@ docker exec -it dotfiles zsh
 
 ## Requirements
 
-1. Install [Xcode](https://developer.apple.com/xcode/) and run ``xcode-select --install``
-1. Download [Python](https://www.python.org), [Node.js](https://nodejs.org/en/), [Go](https://golang.org/dl/) and [Rust](https://www.rust-lang.org/) via ``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
-1. Install [Antibody](http://getantibody.github.io/) via ``sudo sh -s -c "$(curl -sfL git.io/antibody)" - -b /usr/local/bin``
+1. Install [Xcode](https://developer.apple.com/xcode/) or run ``xcode-select --install``
+1. Download and install [Python](https://www.python.org)
+1. Download and install [Node.js](https://nodejs.org/en/)
+1. Download and install  [Go](https://golang.org/dl/) 
+1. Download and install  [Rust](https://www.rust-lang.org/) via ``curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh``
 1. Install [Atom](http://atom.io) and ``CMD+SHIFT+P`` to ``Window: Install shell commands``
 1. Optional, install [GPG Suite](https://gpgtools.org)
 1. Optional, Install [KeyBase](https://keybase.io)
