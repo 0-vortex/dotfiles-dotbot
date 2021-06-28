@@ -3,7 +3,11 @@
 set -e
 
 if [ `uname` == 'Linux' ]; then
-  OS=`lsb_release -i -s | tr '[:upper:]' '[:lower:]'`
+  if [ -f /etc/lsb-release -o -d /etc/lsb-release.d ]; then
+    OS=`lsb_release -i -s | tr '[:upper:]' '[:lower:]'`
+  else
+    OS=`ls -d /etc/[A-Za-z]*[_-][rv]e[lr]* | grep -v "lsb" | cut -d'/' -f3 | cut -d'-' -f1 | cut -d$'\n' -f1`
+  fi
 else
   OS=`uname | tr '[:upper:]' '[:lower:]'`
 fi

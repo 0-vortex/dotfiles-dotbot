@@ -1,9 +1,6 @@
 [submodule "vendor/dotbot"]
 	path = vendor/dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "vendor/fonts"]
-	path = vendor/fonts
-	url = https://github.com/powerline/fonts
 [submodule "vendor/git-extras"]
 	path = vendor/git-extras
 	url = https://github.com/tj/git-extras
@@ -16,3 +13,6 @@
 [submodule "vendor/font-jetbrains"]
 	path = vendor/font-jetbrains
 	url = https://github.com/JetBrains/JetBrainsMono
+[submodule "vendor/font-powerline"]
+	path = vendor/font-powerline
+	url = https://github.com/powerline/fonts
