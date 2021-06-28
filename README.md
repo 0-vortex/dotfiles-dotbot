@@ -217,7 +217,40 @@ gpg --armor --export keyname | pbcopy
 Assuming you are happy with your fork and just want to show it off, 
 change the following to your `docker` username and just ship it. 
 
+Here are manual examples of all the tags available in the current [Dockerfile](./Dockerfile), testing included.
+
+### Debian
+
 ```shell
-docker build . --squash -t 0vortex/dotfiles
-docker push -a 0vortex/dotfiles
+docker build -t 0vortex/dotfiles:debian --squash --target debian .
+docker run -dit --rm --name dotfiles-debian 0vortex/dotfiles:debian
+docker exec -it dotfiles-debian zsh
+docker push 0vortex/dotfiles:debian
+```
+
+### Ubuntu
+
+```shell
+docker build -t 0vortex/dotfiles:ubuntu --squash --target ubuntu .
+docker run -dit --rm --name dotfiles-ubuntu 0vortex/dotfiles:ubuntu
+docker exec -it dotfiles-ubuntu zsh
+docker push -0vortex/dotfiles:ubuntu
+```
+
+### Alpine
+
+```shell
+docker build -t 0vortex/dotfiles:alpine --squash --target alpine .
+docker run -dit --rm --name dotfiles-alpine 0vortex/dotfiles:alpine
+docker exec -it dotfiles-alpine zsh
+docker push 0vortex/dotfiles:alpine
+```
+
+### Arch
+
+```shell
+docker build -t 0vortex/dotfiles:arch --squash --target arch .
+docker run -dit --rm --name dotfiles-arch 0vortex/dotfiles:arch
+docker exec -it dotfiles-arch zsh
+docker push 0vortex/dotfiles:arch
 ```

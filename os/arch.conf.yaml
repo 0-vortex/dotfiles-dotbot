@@ -1,8 +1,8 @@
 - shell:
-  - description: "Detected OS:"
-    command: "echo \" - $(uname)\""
-    quiet: true
-    stdout: true
+    - description: "Detected OS:"
+      command: "echo \" - $(uname)\""
+      quiet: true
+      stdout: true
 
 - link:
     ~/.npm-global/etc/.npmrc:

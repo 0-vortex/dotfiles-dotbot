@@ -28,10 +28,10 @@
 
 - shell:
   - description: "Cleaning user fonts"
-    command: "sudo rm -f -- ~/Library/Fonts/*.ttf"
+    command: "sudo rm -f -- ~/Library/Fonts/*"
 
   - description: "Installing fonts"
-    command: "./vendor/fonts/install.sh"
+    command: "./vendor/font-powerline/install.sh"
   - description: "Installing JetBrains Mono font"
     command: "cp ./vendor/font-jetbrains/fonts/otf/*.otf ~/Library/Fonts"
 
