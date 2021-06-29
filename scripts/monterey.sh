@@ -68,13 +68,20 @@ defaults write -g "com.apple.sound.beep.flash" -int 0
 defaults write -g "com.apple.springing.delay" -float "0.5"
 defaults write -g "com.apple.springing.enabled" -bool true
 defaults write -g "com.apple.trackpad.forceClick" -bool true
+defaults write -g "com.apple.mouse.scaling" floatbool "0.5"
+defaults write -g InitialKeyRepeat -int 35
 defaults write -g NSPreferredWebServices -dict-add "NSWebServicesProviderWebSearch" '{
     NSDefaultDisplayName = DuckDuckGo;
     NSProviderIdentifier = "com.duckduckgo";
 }'
 defaults write -g NSUserDictionaryReplacementItems -array
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g NSAutomaticTextCompletionEnabled -bool false
+defaults write -g WebAutomaticSpellingCorrectionEnabled -bool false
 
 # Dock
 defaults write com.apple.dock autohide -bool false
