@@ -21,6 +21,7 @@
   fame = !python3 -m gitfame
   unstage = reset HEAD
   uncommit = reset --soft HEAD^
+  amend = commit --amend --no-edit --sign
 [core]
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   # [default] trailing-space: looks for spaces at the end of a line
@@ -63,3 +64,5 @@
   auto = 1
 [split-diffs]
   theme = github-dark-dim
+[init]
+  defaultBranch = main
