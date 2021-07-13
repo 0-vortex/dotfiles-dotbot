@@ -1,3 +1,5 @@
+#zmodload zsh/zprof
+
 source /etc/profile
 source ~/.zsh_plugins.sh # Load zsh plugins
 
@@ -9,3 +11,4 @@ source ~/.dotfiles/config/zsh/alias.zsh
 source ~/.dotfiles/vendor/git-extras/etc/git-extras-completion.zsh
 
 neofetch -s
+#zprof
