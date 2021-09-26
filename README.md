@@ -73,7 +73,6 @@ docker exec -it dotfiles zsh
 - [gnuls](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/misc/gnuls/index.html)
 - [gnupg](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/security/gnupg/index.html)
 - [watchman](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/sysutils/watchman/index.html)
-- [weechat](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/chat/weechat/index.html)
 
 ### Python user modules
 

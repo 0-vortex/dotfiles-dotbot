@@ -66,3 +66,5 @@
   theme = github-dark-dim
 [init]
   defaultBranch = main
+[pull]
+  rebase = true

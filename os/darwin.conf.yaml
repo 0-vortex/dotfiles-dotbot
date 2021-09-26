@@ -58,8 +58,7 @@
       gnuls
       neofetch
       so
-      watchman
-      weechat"
+      watchman"
 
   - description: "Installing Atom IDE packages"
     command: "./scripts/apm.sh
