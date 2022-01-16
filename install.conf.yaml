@@ -51,8 +51,7 @@
       n
       npm-check-updates
       npkill
-      ntl
-      quicktype"
+      ntl"
 
   - description: "Installing Rust global packages"
     command: "~/.cargo/bin/cargo install
